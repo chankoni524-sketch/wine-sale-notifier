@@ -21,8 +21,18 @@ def format_deal_message(deal):
     return "\n".join(lines)
 
 
+def has_price(deal):
+    return (
+        deal.get("original_price_per_bottle") is not None
+        and deal.get("sale_price_per_bottle") is not None
+    )
+
+
 deals = search_deals()
 print(f"検索結果: {len(deals)}件")
+
+deals = [deal for deal in deals if has_price(deal)]
+print(f"うち価格情報あり: {len(deals)}件")
 
 new_deals = filter_new_deals(deals)
 print(f"うち新着: {len(new_deals)}件")
