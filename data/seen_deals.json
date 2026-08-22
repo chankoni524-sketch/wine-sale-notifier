@@ -26,5 +26,33 @@
     "found_summary": "「カリフォルニアのロマネ・コンティ」と称されるカレラの単一畑ピノ・ノワールが単品30%OFFの10,626円（税込）で販売中。",
     "dedup_key": "9fe38f5e9db3fc36",
     "first_seen": "2026-08-22"
+  },
+  "089bb80d40d82340": {
+    "product_name": "ロバート・スティーヴンス メリタージュ ナパヴァレー(2009)",
+    "category": "wine",
+    "shop": "しあわせワイン倶楽部",
+    "bottle_count": 1,
+    "original_price_per_bottle": 11000,
+    "sale_price_per_bottle": 5940,
+    "discount_percent": 45,
+    "sale_period": "在庫限り・終売セール(日本輸入停止による在庫一掃)",
+    "url": "https://www.shiawasewine-c.com/?pid=192677082",
+    "found_summary": "現地価格高騰による日本輸入停止に伴い、ナパヴァレー産赤ワイン(メリタージュ)が通常11,000円から45%オフの5,940円で販売されている在庫一掃セール。",
+    "dedup_key": "089bb80d40d82340",
+    "first_seen": "2026-08-22"
+  },
+  "51f6942e10c8e94d": {
+    "product_name": "【限定特別セット】ロバート・スティーヴンス「ナパ・ヴァレー」贅沢赤白2本セット(シャルドネ&カベルネ・ソーヴィニヨン)",
+    "category": "wine",
+    "shop": "wine&(ワインアンド)",
+    "bottle_count": 2,
+    "original_price_per_bottle": 6750,
+    "sale_price_per_bottle": 4490,
+    "discount_percent": 33.5,
+    "sale_period": "期間限定(特別セット)",
+    "url": "https://wineand.jp/products/list?category_id=6",
+    "found_summary": "ナパ・ヴァレー産のシャルドネとカベルネ・ソーヴィニヨンの赤白2本セットが、通常13,500円(税抜)から特別価格8,980円(税抜)、約33.5%オフで販売中。",
+    "dedup_key": "51f6942e10c8e94d",
+    "first_seen": "2026-08-22"
   }
 }
