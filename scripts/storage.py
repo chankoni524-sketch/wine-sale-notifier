@@ -3,7 +3,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "seen_deals.json"
+DATA_FILE = Path(__file__).resolve().parent.parent / "docs" / "data.json"
 
 
 def make_dedup_key(deal):

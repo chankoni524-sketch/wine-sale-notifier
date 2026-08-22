@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ワイン セール情報</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --wine: #7b1e3a;
+    --bg: #faf7f5;
+    --card-bg: #ffffff;
+    --text: #2a2020;
+    --muted: #7a6f6f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    background: var(--wine);
+    color: white;
+    padding: 20px 16px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header h1 {
+    margin: 0 0 12px;
+    font-size: 1.3rem;
+  }
+  #search {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .count {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 4px 0 16px;
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .card h2 {
+    font-size: 1.05rem;
+    margin: 0 0 6px;
+  }
+  .shop {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .sale-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--wine);
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .discount {
+    background: var(--wine);
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+  .period, .summary {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 4px 0;
+  }
+  .link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--wine);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .empty {
+    text-align: center;
+    color: var(--muted);
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🍷 ワイン セール情報</h1>
+  <input type="text" id="search" placeholder="商品名・店舗名で検索">
+</header>
+<main>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+</main>
+<script>
+async function main() {
+  const res = await fetch('./data.json', { cache: 'no-store' });
+  const data = await res.json();
+  const deals = Object.values(data).sort((a, b) => (b.first_seen || '').localeCompare(a.first_seen || ''));
+
+  const listEl = document.getElementById('list');
+  const countEl = document.getElementById('count');
+  const searchEl = document.getElementById('search');
+
+  function render(filterText) {
+    const keyword = (filterText || '').trim().toLowerCase();
+    const filtered = deals.filter(d => {
+      if (!keyword) return true;
+      return (d.product_name || '').toLowerCase().includes(keyword)
+        || (d.shop || '').toLowerCase().includes(keyword);
+    });
+
+    countEl.textContent = `${filtered.length}件`;
+
+    if (filtered.length === 0) {
+      listEl.innerHTML = '<div class="empty">見つかりませんでした</div>';
+      return;
+    }
+
+    listEl.innerHTML = filtered.map(d => `
+      <div class="card">
+        <h2>${escapeHtml(d.product_name || '(商品名不明)')}</h2>
+        <div class="shop">${escapeHtml(d.shop || '')} ・ ${escapeHtml(d.first_seen || '')}発見</div>
+        <div class="price-row">
+          <span class="sale-price">¥${formatPrice(d.sale_price_per_bottle)}</span>
+          <span class="original-price">¥${formatPrice(d.original_price_per_bottle)}</span>
+          <span class="discount">${d.discount_percent}%OFF</span>
+        </div>
+        ${d.sale_period ? `<div class="period">🗓 ${escapeHtml(d.sale_period)}</div>` : ''}
+        ${d.found_summary ? `<div class="summary">${escapeHtml(d.found_summary)}</div>` : ''}
+        ${d.url ? `<a class="link" href="${escapeHtml(d.url)}" target="_blank" rel="noopener">購入ページを見る →</a>` : ''}
+      </div>
+    `).join('');
+  }
+
+  function formatPrice(value) {
+    if (value === null || value === undefined) return '?';
+    return Number(value).toLocaleString('ja-JP');
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  searchEl.addEventListener('input', () => render(searchEl.value));
+  render('');
+}
+
+main();
+</script>
+</body>
+</html>
