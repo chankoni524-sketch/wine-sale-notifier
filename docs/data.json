@@ -124,5 +124,34 @@
     "found_summary": "8月3日に追加された単品赤ワインのセール特価30%OFF案内。デコイの上級キュヴェ「デコイ・リミテッド」パソ・ロブレス産カベルネ・ソーヴィニヨン。具体的な円建て価格は商品ページ要確認。",
     "dedup_key": "c5195502ef894c08",
     "first_seen": "2026-08-22"
+  },
+  "3ede2bdff550a3da": {
+    "product_name": "マタンザス クリーク ソーヴィニヨンブラン ソノマ カウンティ [2022]",
+    "category": "wine",
+    "shop": "オンラインワッシーズ (winestore.jp)",
+    "bottle_count": 1,
+    "original_price_per_bottle": 6160,
+    "sale_price_per_bottle": 4312,
+    "discount_percent": 30,
+    "sale_period": "決算セール開催中（終了時期未定、随時更新）",
+    "url": "https://winestore.jp/c/gr389/sale",
+    "found_summary": "カリフォルニア・ソノマ産の人気白ワインが決算セールで30%OFFの4,312円（税込）で販売中。通常価格は約6,160円。",
+    "dedup_key": "3ede2bdff550a3da",
+    "first_seen": "2026-08-22"
+  },
+  "f0a9148d339dcba4": {
+    "product_name": "カレラ ピノノワール ド ヴィリエ マウント ハーラン [2020]",
+    "category": "wine",
+    "shop": "オンラインワッシーズ (winestore.jp)",
+    "bottle_count": 1,
+    "original_price_per_bottle": 15180,
+    "sale_price_per_bottle": 10626,
+    "discount_percent": 30,
+    "sale_period": "決算セール開催中（終了時期未定、随時更新）",
+    "url": "https://winestore.jp/c/item1/item920/item12/86905",
+    "found_summary": "『カリフォルニアのロマネ・コンティ』と称される名門カレラの単一畑ピノ・ノワール（ワインスペクテイター95点）が決算セールで30%OFFの10,626円（税込）に。通常価格は約15,180円。",
+    "dedup_key": "f0a9148d339dcba4",
+    "first_seen": "2026-08-22",
+    "image_url": "https://wine1227.itembox.cloud/product/572/000000057294/000000057294-01.jpg?size&#x3D;m&amp;w&#x3D;NDAw&amp;t&#x3D;20250207193111"
   }
 }
