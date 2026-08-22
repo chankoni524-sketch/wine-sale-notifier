@@ -1,0 +1,31 @@
+name: 既存データへの画像バックフィル(手動実行専用)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 依存パッケージをインストール
+        run: pip install -r requirements.txt
+
+      - name: 画像URLを取得して補完
+        run: python scripts/backfill_images.py
+
+      - name: 更新されたデータをリポジトリに保存
+        run: |
+          git config user.name "wine-sale-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/*.json
+          git diff --cached --quiet || git commit -m "既存データに画像を補完"
+          git push

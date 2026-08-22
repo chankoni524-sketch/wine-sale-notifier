@@ -3,6 +3,7 @@ from datetime import date
 from pathlib import Path
 
 from dateutils import is_past
+from image_utils import image_enrich
 from line_notify import broadcast_texts
 from menu_search import search_items
 from storage import filter_new_items
@@ -37,7 +38,10 @@ def main():
     items = [item for item in items if not is_past(item, today)]
     print(f"うち販売終了していないもの: {len(items)}件")
 
-    new_items = filter_new_items(items, MENU_DATA_FILE, MENU_KEY_FIELDS)
+    new_items = filter_new_items(
+        items, MENU_DATA_FILE, MENU_KEY_FIELDS,
+        enrich_fn=image_enrich,
+    )
     print(f"うち新着: {len(new_items)}件")
     print(json.dumps(new_items, ensure_ascii=False, indent=2))
 

@@ -1,5 +1,6 @@
 import json
 
+from image_utils import image_enrich
 from line_notify import broadcast_texts
 from storage import filter_new_deals
 from wine_search import search_deals
@@ -35,7 +36,9 @@ def main():
     filtered = [deal for deal in deals if has_price(deal)]
     print(f"うち価格情報あり: {len(filtered)}件")
 
-    new_deals = filter_new_deals(filtered)
+    new_deals = filter_new_deals(
+        filtered, enrich_fn=image_enrich
+    )
     print(f"うち新着: {len(new_deals)}件")
     print(json.dumps(new_deals, ensure_ascii=False, indent=2))
 

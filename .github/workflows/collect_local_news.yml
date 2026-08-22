@@ -1,0 +1,36 @@
+name: 地域ニュースの自動収集
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 日本時間 毎朝9:00
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 依存パッケージをインストール
+        run: pip install -r requirements.txt
+
+      - name: 検索してLINEに通知
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+        run: python scripts/collect_local_news.py
+
+      - name: 更新されたデータをリポジトリに保存
+        run: |
+          git config user.name "wine-sale-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/local_news.json
+          git diff --cached --quiet || git commit -m "地域ニュースを更新"
+          git push

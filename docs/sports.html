@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>フードフェス情報</title>
+<title>日本代表 チケット情報</title>
 <style>
   :root {
     color-scheme: light dark;
-    --main: #1e6b55;
-    --bg: #f5faf8;
+    --main: #1a4d8f;
+    --bg: #f4f7fb;
     --card-bg: #ffffff;
-    --text: #1f2a26;
-    --muted: #6f7a76;
+    --text: #1f2530;
+    --muted: #6b7280;
   }
   * { box-sizing: border-box; }
   body {
@@ -71,6 +71,17 @@
     font-size: 0.85rem;
     margin: 4px 0 16px;
   }
+  .month-header {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--main);
+    margin: 20px 0 10px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--main);
+  }
+  .month-header:first-child {
+    margin-top: 0;
+  }
   .card {
     display: flex;
     gap: 12px;
@@ -96,12 +107,7 @@
     font-size: 1.05rem;
     margin: 0 0 6px;
   }
-  .venue {
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-bottom: 8px;
-  }
-  .theme-badge {
+  .sport-badge {
     display: inline-block;
     background: var(--main);
     color: white;
@@ -110,7 +116,7 @@
     border-radius: 999px;
     margin-bottom: 8px;
   }
-  .period, .scale, .summary {
+  .venue, .period, .summary {
     font-size: 0.85rem;
     color: var(--muted);
     margin: 4px 0;
@@ -128,30 +134,19 @@
     color: var(--muted);
     margin-top: 40px;
   }
-  .month-header {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--main);
-    margin: 20px 0 10px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid var(--main);
-  }
-  .month-header:first-child {
-    margin-top: 0;
-  }
 </style>
 </head>
 <body>
 <header>
-  <h1>🎉 フードフェス情報</h1>
+  <h1>🎫 日本代表 チケット情報</h1>
   <nav class="tabs">
     <a href="./index.html">🍷 ワイン</a>
-    <a href="./festivals.html" class="active">🎉 フードフェス</a>
+    <a href="./festivals.html">🎉 フードフェス</a>
     <a href="./menus.html">🍽 メニュー</a>
-    <a href="./sports.html">🎫 チケット</a>
+    <a href="./sports.html" class="active">🎫 チケット</a>
     <a href="./local_news.html">📰 地域ニュース</a>
   </nav>
-  <input type="text" id="search" placeholder="イベント名・エリアで検索">
+  <input type="text" id="search" placeholder="大会名・スポーツで検索">
 </header>
 <main>
   <div class="count" id="count"></div>
@@ -159,12 +154,17 @@
 </main>
 <script>
 async function main() {
-  const res = await fetch('./festivals.json', { cache: 'no-store' });
+  const res = await fetch('./sports_tickets.json', { cache: 'no-store' });
   const data = await res.json();
   const todayStr = new Date().toISOString().slice(0, 10);
-  const events = Object.values(data)
-    .filter(e => (e.end_date || e.start_date || '9999-99-99') >= todayStr)
-    .sort((a, b) => (a.start_date || '9999').localeCompare(b.start_date || '9999'));
+  const oneMonthLater = new Date();
+  oneMonthLater.setDate(oneMonthLater.getDate() + 31);
+  const cutoffStr = oneMonthLater.toISOString().slice(0, 10);
+
+  const items = Object.values(data)
+    .filter(i => !i.match_date || i.match_date >= todayStr)
+    .filter(i => !i.ticket_sale_date || i.ticket_sale_date <= cutoffStr)
+    .sort((a, b) => (a.match_date || a.ticket_sale_date || '9999').localeCompare(b.match_date || b.ticket_sale_date || '9999'));
 
   const listEl = document.getElementById('list');
   const countEl = document.getElementById('count');
@@ -172,11 +172,11 @@ async function main() {
 
   function render(filterText) {
     const keyword = (filterText || '').trim().toLowerCase();
-    const filtered = events.filter(e => {
+    const filtered = items.filter(i => {
       if (!keyword) return true;
-      return (e.event_name || '').toLowerCase().includes(keyword)
-        || (e.area || '').toLowerCase().includes(keyword)
-        || (e.theme || '').toLowerCase().includes(keyword);
+      return (i.competition_name || '').toLowerCase().includes(keyword)
+        || (i.sport || '').toLowerCase().includes(keyword)
+        || (i.match_description || '').toLowerCase().includes(keyword);
     });
 
     countEl.textContent = `${filtered.length}件`;
@@ -188,24 +188,21 @@ async function main() {
 
     listEl.innerHTML = groupByMonth(filtered).map(group => `
       <div class="month-header">${escapeHtml(group.label)}</div>
-      ${group.items.map(e => {
-        let period = e.start_date || '?';
-        if (e.end_date) period += ` 〜 ${e.end_date}`;
-        return `
+      ${group.items.map(i => `
         <div class="card">
-          ${e.image_url ? `<img class="card-image" src="${escapeHtml(e.image_url)}" loading="lazy" onerror="this.remove()">` : ''}
+          ${i.image_url ? `<img class="card-image" src="${escapeHtml(i.image_url)}" loading="lazy" onerror="this.remove()">` : ''}
           <div class="card-body">
-            <h2>${escapeHtml(e.event_name || '(イベント名不明)')}</h2>
-            <div class="venue">📍 ${escapeHtml(e.venue || '')}(${escapeHtml(e.area || '')})</div>
-            ${e.theme ? `<span class="theme-badge">${escapeHtml(e.theme)}</span>` : ''}
-            <div class="period">🗓 ${escapeHtml(period)}</div>
-            ${e.scale_note ? `<div class="scale">👥 ${escapeHtml(e.scale_note)}</div>` : ''}
-            ${e.found_summary ? `<div class="summary">${escapeHtml(e.found_summary)}</div>` : ''}
-            ${e.url ? `<a class="link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">詳細を見る →</a>` : ''}
+            <span class="sport-badge">${escapeHtml(i.sport || '')}</span>
+            <h2>${escapeHtml(i.competition_name || '(大会名不明)')}</h2>
+            ${i.match_description ? `<div class="summary">${escapeHtml(i.match_description)}</div>` : ''}
+            ${i.venue ? `<div class="venue">📍 ${escapeHtml(i.venue)}</div>` : ''}
+            ${i.match_date ? `<div class="period">🗓 試合日: ${escapeHtml(i.match_date)}</div>` : ''}
+            <div class="period">🎫 チケット販売開始: ${escapeHtml(i.ticket_sale_date || '?')}</div>
+            ${i.found_summary ? `<div class="summary">${escapeHtml(i.found_summary)}</div>` : ''}
+            ${i.url ? `<a class="link" href="${escapeHtml(i.url)}" target="_blank" rel="noopener">詳細を見る →</a>` : ''}
           </div>
         </div>
-      `;
-      }).join('')}
+      `).join('')}
     `).join('');
   }
 
@@ -217,10 +214,11 @@ async function main() {
 
   function groupByMonth(list) {
     const groups = new Map();
-    for (const e of list) {
-      const key = (e.start_date && e.start_date.length >= 7) ? e.start_date.slice(0, 7) : 'unknown';
+    for (const i of list) {
+      const dateStr = i.match_date || i.ticket_sale_date;
+      const key = (dateStr && dateStr.length >= 7) ? dateStr.slice(0, 7) : 'unknown';
       if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(e);
+      groups.get(key).push(i);
     }
     const keys = Array.from(groups.keys()).sort((a, b) => {
       if (a === 'unknown') return 1;
