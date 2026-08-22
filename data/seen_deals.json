@@ -1,0 +1,30 @@
+{
+  "72ac0828d2193e1e": {
+    "product_name": "マタンザス クリーク ソーヴィニヨンブラン ソノマ カウンティ 2022",
+    "category": "wine",
+    "shop": "オンラインワッシーズ（winestore.jp）",
+    "bottle_count": "1",
+    "original_price_per_bottle": "6160",
+    "sale_price_per_bottle": "4312",
+    "discount_percent": "30",
+    "sale_period": "決算セール開催中（常設セールコーナー、終了時期未定）",
+    "url": "https://winestore.jp/c/gr389/sale",
+    "found_summary": "カリフォルニア・ソノマ産の白ワインが単品30%OFFの4,312円（税込）で販売中。ワッシーズの割引セールコーナーに掲載されている。",
+    "dedup_key": "72ac0828d2193e1e",
+    "first_seen": "2026-08-22"
+  },
+  "9fe38f5e9db3fc36": {
+    "product_name": "カレラ ピノノワール ド ヴィリエ マウント ハーラン 2020",
+    "category": "wine",
+    "shop": "オンラインワッシーズ（winestore.jp）",
+    "bottle_count": "1",
+    "original_price_per_bottle": "15180",
+    "sale_price_per_bottle": "10626",
+    "discount_percent": "30",
+    "sale_period": "決算セール開催中（常設セールコーナー、終了時期未定）",
+    "url": "https://winestore.jp/c/item1/item920/item12/86905",
+    "found_summary": "「カリフォルニアのロマネ・コンティ」と称されるカレラの単一畑ピノ・ノワールが単品30%OFFの10,626円（税込）で販売中。",
+    "dedup_key": "9fe38f5e9db3fc36",
+    "first_seen": "2026-08-22"
+  }
+}
