@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ワイン セール情報</title>
+<title>フードフェス情報</title>
 <style>
   :root {
     color-scheme: light dark;
-    --wine: #7b1e3a;
-    --bg: #faf7f5;
+    --main: #1e6b55;
+    --bg: #f5faf8;
     --card-bg: #ffffff;
-    --text: #2a2020;
-    --muted: #7a6f6f;
+    --text: #1f2a26;
+    --muted: #6f7a76;
   }
   * { box-sizing: border-box; }
   body {
@@ -21,7 +21,7 @@
     color: var(--text);
   }
   header {
-    background: var(--wine);
+    background: var(--main);
     color: white;
     padding: 20px 16px 16px;
     position: sticky;
@@ -31,6 +31,26 @@
   header h1 {
     margin: 0 0 12px;
     font-size: 1.3rem;
+  }
+  nav.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  nav.tabs a {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  nav.tabs a.active {
+    background: white;
+    color: var(--main);
+    font-weight: 700;
   }
   #search {
     width: 100%;
@@ -60,35 +80,21 @@
     font-size: 1.05rem;
     margin: 0 0 6px;
   }
-  .shop {
+  .venue {
     color: var(--muted);
     font-size: 0.85rem;
     margin-bottom: 8px;
   }
-  .price-row {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    margin-bottom: 6px;
-  }
-  .sale-price {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--wine);
-  }
-  .original-price {
-    text-decoration: line-through;
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-  .discount {
-    background: var(--wine);
+  .theme-badge {
+    display: inline-block;
+    background: var(--main);
     color: white;
     font-size: 0.8rem;
     padding: 2px 8px;
     border-radius: 999px;
+    margin-bottom: 8px;
   }
-  .period, .summary {
+  .period, .scale, .summary {
     font-size: 0.85rem;
     color: var(--muted);
     margin: 4px 0;
@@ -97,7 +103,7 @@
     display: inline-block;
     margin-top: 8px;
     font-size: 0.9rem;
-    color: var(--wine);
+    color: var(--main);
     text-decoration: none;
     font-weight: 600;
   }
@@ -106,36 +112,16 @@
     color: var(--muted);
     margin-top: 40px;
   }
-  nav.tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 12px;
-  }
-  nav.tabs a {
-    flex: 1;
-    text-align: center;
-    padding: 8px;
-    border-radius: 8px;
-    background: rgba(255,255,255,0.15);
-    color: white;
-    text-decoration: none;
-    font-size: 0.85rem;
-  }
-  nav.tabs a.active {
-    background: white;
-    color: var(--wine);
-    font-weight: 700;
-  }
 </style>
 </head>
 <body>
 <header>
-  <h1>🍷 ワイン セール情報</h1>
+  <h1>🎉 フードフェス情報</h1>
   <nav class="tabs">
-    <a href="./index.html" class="active">🍷 ワイン</a>
-    <a href="./festivals.html">🎉 フードフェス</a>
+    <a href="./index.html">🍷 ワイン</a>
+    <a href="./festivals.html" class="active">🎉 フードフェス</a>
   </nav>
-  <input type="text" id="search" placeholder="商品名・店舗名で検索">
+  <input type="text" id="search" placeholder="イベント名・エリアで検索">
 </header>
 <main>
   <div class="count" id="count"></div>
@@ -143,9 +129,9 @@
 </main>
 <script>
 async function main() {
-  const res = await fetch('./data.json', { cache: 'no-store' });
+  const res = await fetch('./festivals.json', { cache: 'no-store' });
   const data = await res.json();
-  const deals = Object.values(data).sort((a, b) => (b.first_seen || '').localeCompare(a.first_seen || ''));
+  const events = Object.values(data).sort((a, b) => (a.start_date || '9999').localeCompare(b.start_date || '9999'));
 
   const listEl = document.getElementById('list');
   const countEl = document.getElementById('count');
@@ -153,10 +139,11 @@ async function main() {
 
   function render(filterText) {
     const keyword = (filterText || '').trim().toLowerCase();
-    const filtered = deals.filter(d => {
+    const filtered = events.filter(e => {
       if (!keyword) return true;
-      return (d.product_name || '').toLowerCase().includes(keyword)
-        || (d.shop || '').toLowerCase().includes(keyword);
+      return (e.event_name || '').toLowerCase().includes(keyword)
+        || (e.area || '').toLowerCase().includes(keyword)
+        || (e.theme || '').toLowerCase().includes(keyword);
     });
 
     countEl.textContent = `${filtered.length}件`;
@@ -166,25 +153,21 @@ async function main() {
       return;
     }
 
-    listEl.innerHTML = filtered.map(d => `
+    listEl.innerHTML = filtered.map(e => {
+      let period = e.start_date || '?';
+      if (e.end_date) period += ` 〜 ${e.end_date}`;
+      return `
       <div class="card">
-        <h2>${escapeHtml(d.product_name || '(商品名不明)')}</h2>
-        <div class="shop">${escapeHtml(d.shop || '')} ・ ${escapeHtml(d.first_seen || '')}発見</div>
-        <div class="price-row">
-          <span class="sale-price">¥${formatPrice(d.sale_price_per_bottle)}</span>
-          <span class="original-price">¥${formatPrice(d.original_price_per_bottle)}</span>
-          <span class="discount">${d.discount_percent}%OFF</span>
-        </div>
-        ${d.sale_period ? `<div class="period">🗓 ${escapeHtml(d.sale_period)}</div>` : ''}
-        ${d.found_summary ? `<div class="summary">${escapeHtml(d.found_summary)}</div>` : ''}
-        ${d.url ? `<a class="link" href="${escapeHtml(d.url)}" target="_blank" rel="noopener">購入ページを見る →</a>` : ''}
+        <h2>${escapeHtml(e.event_name || '(イベント名不明)')}</h2>
+        <div class="venue">📍 ${escapeHtml(e.venue || '')}(${escapeHtml(e.area || '')})</div>
+        ${e.theme ? `<span class="theme-badge">${escapeHtml(e.theme)}</span>` : ''}
+        <div class="period">🗓 ${escapeHtml(period)}</div>
+        ${e.scale_note ? `<div class="scale">👥 ${escapeHtml(e.scale_note)}</div>` : ''}
+        ${e.found_summary ? `<div class="summary">${escapeHtml(e.found_summary)}</div>` : ''}
+        ${e.url ? `<a class="link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">詳細を見る →</a>` : ''}
       </div>
-    `).join('');
-  }
-
-  function formatPrice(value) {
-    if (value === null || value === undefined) return '?';
-    return Number(value).toLocaleString('ja-JP');
+    `;
+    }).join('');
   }
 
   function escapeHtml(str) {
