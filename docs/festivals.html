@@ -131,7 +131,10 @@
 async function main() {
   const res = await fetch('./festivals.json', { cache: 'no-store' });
   const data = await res.json();
-  const events = Object.values(data).sort((a, b) => (a.start_date || '9999').localeCompare(b.start_date || '9999'));
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const events = Object.values(data)
+    .filter(e => (e.end_date || e.start_date || '9999-99-99') >= todayStr)
+    .sort((a, b) => (a.start_date || '9999').localeCompare(b.start_date || '9999'));
 
   const listEl = document.getElementById('list');
   const countEl = document.getElementById('count');

@@ -28,18 +28,23 @@ def has_price(deal):
     )
 
 
-deals = search_deals()
-print(f"検索結果: {len(deals)}件")
+def main():
+    deals = search_deals()
+    print(f"検索結果: {len(deals)}件")
 
-deals = [deal for deal in deals if has_price(deal)]
-print(f"うち価格情報あり: {len(deals)}件")
+    filtered = [deal for deal in deals if has_price(deal)]
+    print(f"うち価格情報あり: {len(filtered)}件")
 
-new_deals = filter_new_deals(deals)
-print(f"うち新着: {len(new_deals)}件")
-print(json.dumps(new_deals, ensure_ascii=False, indent=2))
+    new_deals = filter_new_deals(filtered)
+    print(f"うち新着: {len(new_deals)}件")
+    print(json.dumps(new_deals, ensure_ascii=False, indent=2))
 
-if new_deals:
-    broadcast_texts([format_deal_message(deal) for deal in new_deals])
-    print(f"LINEに{len(new_deals)}件送信しました")
-else:
-    print("新着がないため、LINE送信はスキップしました")
+    if new_deals:
+        broadcast_texts([format_deal_message(deal) for deal in new_deals])
+        print(f"LINEに{len(new_deals)}件送信しました")
+    else:
+        print("新着がないため、LINE送信はスキップしました")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,18 +1,23 @@
 import json
 import os
 import re
+from datetime import date
 
 import anthropic
 from dotenv import load_dotenv
 
 load_dotenv()
 
-PROMPT = """\
+PROMPT_TEMPLATE = """\
 あなたは東京都内のフードフェス・お祭り情報を探すリサーチャーです。Web検索を使って、
 以下の条件に合うイベント情報を探してください。
 
+本日の日付は __TODAY__ です。
+
 条件:
 - 開催エリアが東京都23区内であること
+- 本日(__TODAY__)以前に終了しているイベントは対象外。まだ開催中、またはこれから開催される
+  イベントのみを対象とする(終了日が分からない場合は、開始日が本日以降かどうかで判断する)
 - 多数の飲食店・屋台が一か所に集まる大規模フェス・祭りであること。目安として、
   30店舗以上の飲食店・屋台が出店するような規模のイベント(例:パキスタンフェス、台湾フェスティバル、
   肉フェス、世界のごちそう博 など、特定の国・地域や食材をテーマに多数の店が集まるもの)
@@ -54,9 +59,13 @@ def _extract_json(text):
     return text
 
 
+def _build_prompt():
+    return PROMPT_TEMPLATE.replace("__TODAY__", date.today().isoformat())
+
+
 def search_events():
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    messages = [{"role": "user", "content": PROMPT}]
+    messages = [{"role": "user", "content": _build_prompt()}]
     kwargs = {
         "model": "claude-sonnet-5",
         "max_tokens": 8000,
