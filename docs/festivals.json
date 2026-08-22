@@ -10,7 +10,8 @@
     "url": "https://www.uenoevent.com/2026-ueno-taiwan-faasai/",
     "found_summary": "上野恩賜公園で開催される台湾夜市がテーマのグルメイベントで、小籠包や魯肉飯、大鶏排、台湾スイーツなどの屋台と獅子舞パフォーマンスが楽しめる。",
     "dedup_key": "97486a3f2a6166a3",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "dcaf37d75e3e7425": {
     "event_name": "ウエノデ.パンダビアフェスタ2026",
@@ -23,7 +24,8 @@
     "url": "https://uenode.jp/series/beerfesta.html",
     "found_summary": "上野恩賜公園で開催される10日間のビール＆グルメイベントで、会場には約50店舗が出店し、国内外のクラフトビールやご当地グルメが楽しめる。",
     "dedup_key": "dcaf37d75e3e7425",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "1d5f75b1b1667ced": {
     "event_name": "上野ゾク夏祭り",
@@ -36,7 +38,8 @@
     "url": "https://zokunatsu.com/",
     "found_summary": "人気動画クリエイター「たっくーTVれいでぃお」が全面プロデュースする大型ホラーイベントで、体験型コンテンツやステージに加え、ブース出店やキッチンカーなどの飲食企画も展開される。",
     "dedup_key": "1d5f75b1b1667ced",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "00679093f4062ed7": {
     "event_name": "サルサストリート2026 UENO de BUENO",
@@ -49,7 +52,8 @@
     "url": "https://www.enjoytokyo.jp/event/list/area1316/cat01/",
     "found_summary": "上野恩賜公園で開催されるラテン・サルサをテーマにしたフェスで、フード・ダンス・音楽を一体で楽しめるイベント。",
     "dedup_key": "00679093f4062ed7",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "af1d2ec94125eb8d": {
     "event_name": "屋台湾フェス2026 ～あつまれ！究極の屋台グルメ～",
@@ -62,7 +66,8 @@
     "url": "https://yataiwan-fes.jp/",
     "found_summary": "台湾の「夜市」をテーマにした屋台グルメイベントが日比谷公園にれのき広場で初開催され、多彩な台湾グルメとスカイランタン体験が楽しめる。",
     "dedup_key": "af1d2ec94125eb8d",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "fa1750e8983fb767": {
     "event_name": "肉祭2026in日比谷公園",
@@ -75,7 +80,8 @@
     "url": "https://www.nikumatsuri.jp/2026hibiya",
     "found_summary": "厳選された肉料理店が集まる肉料理の祭典で、総店舗数は約30店舗、クラフトビールやライブステージも展開される。",
     "dedup_key": "fa1750e8983fb767",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "ae0516c016e07d4e": {
     "event_name": "んめぇ青森フェス2026",
@@ -88,7 +94,8 @@
     "url": "https://www.hibiyaevent.com/",
     "found_summary": "青森県の海の幸や山の幸を使ったグルメを日比谷公園で味わえる初開催のご当地グルメイベント。",
     "dedup_key": "ae0516c016e07d4e",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "5609f1a066157807": {
     "event_name": "第11回パエリア・タパス祭り2026",
@@ -101,7 +108,8 @@
     "url": "https://www.hibiyapark.info/",
     "found_summary": "日比谷公園で開催される日本最大級のスペイン料理の祭典で、全国パエリア選手権や全国タパス選手権など多彩な企画がある。",
     "dedup_key": "5609f1a066157807",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "df319c6ba31c7c0e": {
     "event_name": "東京カレー万博2026",
@@ -114,7 +122,8 @@
     "url": "https://partyanimalsjp.com/2026/05/26/20260806pakistan-japan-friendship/",
     "found_summary": "新宿区立大久保公園で27日間開催されるカレー・ビリヤニ専門イベントで、ジャンルの壁を越えた48店舗が集結する。",
     "dedup_key": "df319c6ba31c7c0e",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "da13ba8a065820e8": {
     "event_name": "チャイナフェスティバル2026",
@@ -127,7 +136,8 @@
     "url": "https://partyanimalsjp.com/2026/05/26/20260806pakistan-japan-friendship/",
     "found_summary": "代々木公園で開催される中国文化・グルメの祭典で、飲食・物産の出店に加えて中国本土アーティストの公演も行われる。",
     "dedup_key": "da13ba8a065820e8",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "22a5099a1c3f57ca": {
     "event_name": "ナマステ・インディア2026",
@@ -140,7 +150,8 @@
     "url": "https://www.yoyogikoen.info/",
     "found_summary": "代々木公園イベント広場で開催されるインド最大級の文化・グルメイベント「ナマステ・インディア2026」。",
     "dedup_key": "22a5099a1c3f57ca",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "6d62e1f9f4e60131": {
     "event_name": "第36回北海道フェアin代々木 ～ザ・北海食道～",
@@ -153,7 +164,8 @@
     "url": "https://www.yoyogikoen.info/",
     "found_summary": "代々木公園で開催される北海道グルメ・物産の大型フェアで、北海道各地の名物料理が一堂に会する。",
     "dedup_key": "6d62e1f9f4e60131",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "0cc887e0df72bbd8": {
     "event_name": "チャイナフェスティバル2026",
@@ -166,7 +178,8 @@
     "url": "https://www.chinafes.net",
     "found_summary": "日中文化交流をテーマにした中華グルメと文化のイベントで、麻婆豆腐や小籠包、餃子、火鍋系メニューなど中国各地の料理ブースが集まる。",
     "dedup_key": "0cc887e0df72bbd8",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "30fd9caef66c592e": {
     "event_name": "東京カレー万博2026",
@@ -179,7 +192,8 @@
     "url": "https://x.com/tokyocurryexpo",
     "found_summary": "全国から集まったカレー・スパイス関連の48店舗が新宿・大久保公園に集結する27日間のグルメイベント。",
     "dedup_key": "30fd9caef66c592e",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "e7a582b8c0c1779f": {
     "event_name": "オクトーバーフェスト2026 in 芝公園 ～Autumn～",
@@ -192,7 +206,8 @@
     "url": "https://www.oktober-fest.jp/shiba/menu.html",
     "found_summary": "日本で唯一ミュンヘン公認のオクトーバーフェストが東京タワーを望む芝公園で開催され、本場ドイツのビールと料理を楽しめる。",
     "dedup_key": "e7a582b8c0c1779f",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "a13947b9c8d36e82": {
     "event_name": "ベトナム バインミーフェスティバル2026",
@@ -205,7 +220,8 @@
     "url": "https://banhmi-fes.com/",
     "found_summary": "ベトナムの「食」と「文化」をテーマにしたイベントで、バインミー専門店や文化体験ブースが新宿中央公園に集まる。",
     "dedup_key": "a13947b9c8d36e82",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "0407be3a09f49314": {
     "event_name": "ナマステ・インディア2026",
@@ -218,7 +234,8 @@
     "url": "http://www.indofestival.com/",
     "found_summary": "ニューヨークやロンドンを超える規模とも言われる世界最大級のインドフェスティバルが代々木公園で開催され、インド料理の屋台が多数出店する。",
     "dedup_key": "0407be3a09f49314",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   },
   "6af2444954be103b": {
     "event_name": "サルサストリート2026 Ueno de Bueno",
@@ -231,6 +248,7 @@
     "url": "https://wsavannast.com/events/salsa-street/",
     "found_summary": "カリブ海・ラテンアメリカ文化をテーマにした入場無料の野外フェスティバルで、タコスやジャークチキンなどのフードブースとダンス・音楽が楽しめる。",
     "dedup_key": "6af2444954be103b",
-    "first_seen": "2026-08-22"
+    "first_seen": "2026-08-22",
+    "notified": true
   }
 }

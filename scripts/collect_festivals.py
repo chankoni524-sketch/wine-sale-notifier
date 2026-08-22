@@ -1,31 +1,23 @@
 import json
-from datetime import date, datetime
+from datetime import date, timedelta
 from pathlib import Path
 
+from dateutils import is_past, parse_date
 from festival_search import search_events
 from line_notify import broadcast_texts
-from storage import filter_new_items
+from storage import load_seen, make_dedup_key, save_seen
 
 FESTIVAL_DATA_FILE = Path(__file__).resolve().parent.parent / "docs" / "festivals.json"
 FESTIVAL_KEY_FIELDS = ["event_name", "venue", "start_date"]
+NOTIFY_WINDOW_DAYS = 31  # 開催開始が通知日から1か月以内のものだけ通知する
 
 
-def _parse_date(value):
-    if not value:
-        return None
-    try:
-        return datetime.strptime(value[:10], "%Y-%m-%d").date()
-    except ValueError:
-        return None
-
-
-def is_past_event(event, today):
-    """終了日(なければ開始日)が今日より前なら、終了済みイベントとみなす。
-    日付の形式が不明な場合は判定できないため対象外にはしない。"""
-    reference_date = _parse_date(event.get("end_date")) or _parse_date(event.get("start_date"))
-    if reference_date is None:
-        return False
-    return reference_date < today
+def is_within_notify_window(event, today):
+    start = parse_date(event.get("start_date"))
+    if start is None:
+        # 開始日が分からない場合は、通知を止めておく理由もないのでそのまま通知対象にする
+        return True
+    return today <= start <= today + timedelta(days=NOTIFY_WINDOW_DAYS)
 
 
 def format_event_message(event):
@@ -52,18 +44,45 @@ def main():
     print(f"検索結果: {len(events)}件")
 
     today = date.today()
-    events = [e for e in events if not is_past_event(e, today)]
+    events = [e for e in events if not is_past(e, today)]
     print(f"うち開催終了していないもの: {len(events)}件")
 
-    new_events = filter_new_items(events, FESTIVAL_DATA_FILE, FESTIVAL_KEY_FIELDS)
-    print(f"うち新着: {len(new_events)}件")
-    print(json.dumps(new_events, ensure_ascii=False, indent=2))
+    seen = load_seen(FESTIVAL_DATA_FILE)
 
-    if new_events:
-        broadcast_texts([format_event_message(event) for event in new_events])
-        print(f"LINEに{len(new_events)}件送信しました")
+    newly_stored = 0
+    for event in events:
+        key = make_dedup_key(event, FESTIVAL_KEY_FIELDS)
+        if key not in seen:
+            seen[key] = {
+                **event,
+                "dedup_key": key,
+                "first_seen": today.isoformat(),
+                "notified": False,
+            }
+            newly_stored += 1
+    print(f"うち新規保存: {newly_stored}件")
+
+    # サイト表示用データは、新規発見分も含めてすぐ保存する(通知の有無とは別)
+    save_seen(FESTIVAL_DATA_FILE, seen)
+
+    to_notify = [
+        event
+        for event in seen.values()
+        if not event.get("notified")
+        and not is_past(event, today)
+        and is_within_notify_window(event, today)
+    ]
+    print(f"通知対象(開催が1か月以内、未通知のもの): {len(to_notify)}件")
+    print(json.dumps(to_notify, ensure_ascii=False, indent=2))
+
+    if to_notify:
+        broadcast_texts([format_event_message(event) for event in to_notify])
+        for event in to_notify:
+            seen[event["dedup_key"]]["notified"] = True
+        save_seen(FESTIVAL_DATA_FILE, seen)
+        print(f"LINEに{len(to_notify)}件送信しました")
     else:
-        print("新着がないため、LINE送信はスキップしました")
+        print("通知対象がないため、LINE送信はスキップしました")
 
 
 if __name__ == "__main__":

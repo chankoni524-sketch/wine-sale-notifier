@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>フードフェス情報</title>
+<title>期間限定メニュー情報</title>
 <style>
   :root {
     color-scheme: light dark;
-    --main: #1e6b55;
-    --bg: #f5faf8;
+    --main: #d2691e;
+    --bg: #fdf8f4;
     --card-bg: #ffffff;
-    --text: #1f2a26;
-    --muted: #6f7a76;
+    --text: #2a2420;
+    --muted: #7a706b;
   }
   * { box-sizing: border-box; }
   body {
@@ -80,12 +80,7 @@
     font-size: 1.05rem;
     margin: 0 0 6px;
   }
-  .venue {
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-bottom: 8px;
-  }
-  .theme-badge {
+  .chain-badge {
     display: inline-block;
     background: var(--main);
     color: white;
@@ -94,7 +89,7 @@
     border-radius: 999px;
     margin-bottom: 8px;
   }
-  .period, .scale, .summary {
+  .price, .period, .summary {
     font-size: 0.85rem;
     color: var(--muted);
     margin: 4px 0;
@@ -112,28 +107,17 @@
     color: var(--muted);
     margin-top: 40px;
   }
-  .month-header {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--main);
-    margin: 20px 0 10px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid var(--main);
-  }
-  .month-header:first-child {
-    margin-top: 0;
-  }
 </style>
 </head>
 <body>
 <header>
-  <h1>🎉 フードフェス情報</h1>
+  <h1>🍽 期間限定メニュー情報</h1>
   <nav class="tabs">
     <a href="./index.html">🍷 ワイン</a>
-    <a href="./festivals.html" class="active">🎉 フードフェス</a>
-    <a href="./menus.html">🍽 メニュー</a>
+    <a href="./festivals.html">🎉 フードフェス</a>
+    <a href="./menus.html" class="active">🍽 メニュー</a>
   </nav>
-  <input type="text" id="search" placeholder="イベント名・エリアで検索">
+  <input type="text" id="search" placeholder="チェーン名・メニュー名で検索">
 </header>
 <main>
   <div class="count" id="count"></div>
@@ -141,12 +125,9 @@
 </main>
 <script>
 async function main() {
-  const res = await fetch('./festivals.json', { cache: 'no-store' });
+  const res = await fetch('./menus.json', { cache: 'no-store' });
   const data = await res.json();
-  const todayStr = new Date().toISOString().slice(0, 10);
-  const events = Object.values(data)
-    .filter(e => (e.end_date || e.start_date || '9999-99-99') >= todayStr)
-    .sort((a, b) => (a.start_date || '9999').localeCompare(b.start_date || '9999'));
+  const items = Object.values(data).sort((a, b) => (b.first_seen || '').localeCompare(a.first_seen || ''));
 
   const listEl = document.getElementById('list');
   const countEl = document.getElementById('count');
@@ -154,11 +135,10 @@ async function main() {
 
   function render(filterText) {
     const keyword = (filterText || '').trim().toLowerCase();
-    const filtered = events.filter(e => {
+    const filtered = items.filter(i => {
       if (!keyword) return true;
-      return (e.event_name || '').toLowerCase().includes(keyword)
-        || (e.area || '').toLowerCase().includes(keyword)
-        || (e.theme || '').toLowerCase().includes(keyword);
+      return (i.chain_name || '').toLowerCase().includes(keyword)
+        || (i.menu_name || '').toLowerCase().includes(keyword);
     });
 
     countEl.textContent = `${filtered.length}件`;
@@ -168,45 +148,21 @@ async function main() {
       return;
     }
 
-    listEl.innerHTML = groupByMonth(filtered).map(group => `
-      <div class="month-header">${escapeHtml(group.label)}</div>
-      ${group.items.map(e => {
-        let period = e.start_date || '?';
-        if (e.end_date) period += ` 〜 ${e.end_date}`;
-        return `
-        <div class="card">
-          <h2>${escapeHtml(e.event_name || '(イベント名不明)')}</h2>
-          <div class="venue">📍 ${escapeHtml(e.venue || '')}(${escapeHtml(e.area || '')})</div>
-          ${e.theme ? `<span class="theme-badge">${escapeHtml(e.theme)}</span>` : ''}
-          <div class="period">🗓 ${escapeHtml(period)}</div>
-          ${e.scale_note ? `<div class="scale">👥 ${escapeHtml(e.scale_note)}</div>` : ''}
-          ${e.found_summary ? `<div class="summary">${escapeHtml(e.found_summary)}</div>` : ''}
-          ${e.url ? `<a class="link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">詳細を見る →</a>` : ''}
-        </div>
-      `;
-      }).join('')}
-    `).join('');
-  }
-
-  function monthLabel(key) {
-    if (key === 'unknown') return '📅 日程未定';
-    const [y, m] = key.split('-');
-    return `📅 ${y}年${parseInt(m, 10)}月`;
-  }
-
-  function groupByMonth(list) {
-    const groups = new Map();
-    for (const e of list) {
-      const key = (e.start_date && e.start_date.length >= 7) ? e.start_date.slice(0, 7) : 'unknown';
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(e);
-    }
-    const keys = Array.from(groups.keys()).sort((a, b) => {
-      if (a === 'unknown') return 1;
-      if (b === 'unknown') return -1;
-      return a.localeCompare(b);
-    });
-    return keys.map(k => ({ key: k, label: monthLabel(k), items: groups.get(k) }));
+    listEl.innerHTML = filtered.map(i => {
+      let period = i.start_date || '?';
+      if (i.end_date) period += ` 〜 ${i.end_date}`;
+      return `
+      <div class="card">
+        <span class="chain-badge">${escapeHtml(i.chain_name || '')}</span>
+        <h2>${escapeHtml(i.menu_name || '(メニュー名不明)')}</h2>
+        ${i.category ? `<div class="period">🏷 ${escapeHtml(i.category)}</div>` : ''}
+        ${i.price ? `<div class="price">💰 ${escapeHtml(i.price)}</div>` : ''}
+        <div class="period">🗓 ${escapeHtml(period)}</div>
+        ${i.found_summary ? `<div class="summary">${escapeHtml(i.found_summary)}</div>` : ''}
+        ${i.url ? `<a class="link" href="${escapeHtml(i.url)}" target="_blank" rel="noopener">詳細を見る →</a>` : ''}
+      </div>
+    `;
+    }).join('');
   }
 
   function escapeHtml(str) {
