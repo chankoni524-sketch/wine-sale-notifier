@@ -1,1 +1,56 @@
-{}
+{
+  "7445623ce9d0f495": {
+    "title": "台湾發祭 2026 上野",
+    "category": "お祭り",
+    "area": "上野駅",
+    "location": "上野恩賜公園・竹の台広場（噴水広場）",
+    "event_date": "2026-08-28",
+    "end_date": "2026-08-30",
+    "url": "https://www.uenopark.info/2026/taiwan-faasai-2026-ueno/",
+    "found_summary": "台湾の夜市をイメージしたイベントで、小籠包や魯肉飯、大鶏排などの台湾フードや獅子舞パフォーマンスが楽しめる、入場無料の3日間のお祭り。",
+    "dedup_key": "7445623ce9d0f495",
+    "first_seen": "2026-08-23",
+    "notified": true,
+    "image_url": "https://www.uenopark.info/wp-content/uploads/2026/08/image-5.jpg"
+  },
+  "fa96b83bbda4574d": {
+    "title": "上野ゾク夏祭り",
+    "category": "お祭り",
+    "area": "上野駅",
+    "location": "上野恩賜公園・噴水広場",
+    "event_date": "2026-09-19",
+    "end_date": "2026-09-23",
+    "url": "https://www.uenoevent.com/2026-ueno-zoku-natsu-matsuri/",
+    "found_summary": "人気動画クリエイター「たっくーTVれいでぃお」が全面プロデュースする大型ホラーイベントで、怪談寄席やホラー映画上映、ホラーBON踊りなどを展開するシルバーウィークの入場無料イベント。",
+    "dedup_key": "fa96b83bbda4574d",
+    "first_seen": "2026-08-23",
+    "notified": true
+  },
+  "41eae8fe3f1b034a": {
+    "title": "サルサストリート2026 UENO de BUENO",
+    "category": "お祭り",
+    "area": "上野駅",
+    "location": "上野恩賜公園・噴水広場（竹の台広場）",
+    "event_date": "2026-10-03",
+    "end_date": "2026-10-04",
+    "url": "https://www.uenopark.info/2026/salsa-street-ueno-2026/",
+    "found_summary": "カリブ海・ラテンアメリカ文化を体感できる野外フェスティバルで、ダンスや音楽、料理などを楽しめる入場無料の2日間のイベント。",
+    "dedup_key": "41eae8fe3f1b034a",
+    "first_seen": "2026-08-23",
+    "notified": false,
+    "image_url": "https://www.uenopark.info/wp-content/uploads/2026/01/image-12.jpg"
+  },
+  "3473988c70adf267": {
+    "title": "2026年 東京ケーブルネットワーク囲碁大会",
+    "category": "地域イベント",
+    "area": "町屋駅",
+    "location": "町屋文化センター 2階ふれあい広場",
+    "event_date": "2026-09-27",
+    "end_date": "2026-09-27",
+    "url": "https://machiya.acc-arakawa.jp/",
+    "found_summary": "町屋文化センターで開催される囲碁大会イベントで、入場無料。",
+    "dedup_key": "3473988c70adf267",
+    "first_seen": "2026-08-23",
+    "notified": false
+  }
+}
