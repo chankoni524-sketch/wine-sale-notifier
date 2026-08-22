@@ -178,5 +178,83 @@
     "found_summary": "ブラックコーヒーに親しみがない人にも飲みやすいよう苦みを抑えつつ旨みを引き出した「クリアコーヒー」シリーズが新発売された。",
     "dedup_key": "e16977d691930c3d",
     "first_seen": "2026-08-23"
+  },
+  "dd316a9b29432886": {
+    "chain_name": "ココス",
+    "menu_name": "『アイドリッシュセブン』コラボ 一織・陸の『Fly away!』ハンバーグプレート（第1弾）",
+    "category": "コラボ",
+    "price": "1,639円（税込）",
+    "start_date": "2026-08-27",
+    "end_date": "2026-09-09",
+    "url": "https://eeo.today/media/2026/08/19/384597/",
+    "found_summary": "ココスが人気アニメ『アイドリッシュセブン』とコラボし、第1弾として一織・陸をイメージしたハンバーグプレートなどを期間限定販売する。",
+    "dedup_key": "dd316a9b29432886",
+    "first_seen": "2026-08-22",
+    "image_url": "https://eeo.today/media/wp-content/uploads/2026/08/20260819_idolish7-8.jpg"
+  },
+  "771fd70ad9be54b2": {
+    "chain_name": "くら寿司",
+    "menu_name": "「ちいかわ」コラボメニュー（あげだっこ！ソースのめん／うさぎのパァンッケーキ）",
+    "category": "コラボ",
+    "price": "不明",
+    "start_date": "2026-08-21",
+    "end_date": "2026-09-30",
+    "url": "https://game.watch.impress.co.jp/docs/news/2131856.html",
+    "found_summary": "くら寿司は人気キャラクター「ちいかわ」とのコラボキャンペーンを8月21日から9月30日まで開催し、作品をモチーフにした2つの新メニューを展開する。",
+    "dedup_key": "771fd70ad9be54b2",
+    "first_seen": "2026-08-22",
+    "image_url": "https://game.watch.impress.co.jp/img/gmw/list/2131/856/0.jpg"
+  },
+  "a0539d018da49e72": {
+    "chain_name": "くら寿司",
+    "menu_name": "うなぎ（一貫）110円「うなぎと肉」フェア",
+    "category": "期間限定",
+    "price": "110円（税込）",
+    "start_date": "2026-08-21",
+    "end_date": "2026-08-30",
+    "url": "https://weekly.ascii.jp/elem/000/004/428/4428206/",
+    "found_summary": "くら寿司は8月21日より「うなぎと肉」フェアを開催し、うなぎ一貫を特別価格110円で提供するほか、浜名湖産うなぎや黒毛和牛、宮崎牛メニューも展開する。",
+    "dedup_key": "a0539d018da49e72",
+    "first_seen": "2026-08-22",
+    "image_url": "https://ascii.jp/img/2026/08/20/4515124/l/b56d7c072237532e.jpg"
+  },
+  "06421263c7ea8b72": {
+    "chain_name": "くら寿司",
+    "menu_name": "濃厚えびまぜそば",
+    "category": "季節限定",
+    "price": "580円（税込）",
+    "start_date": "2026-08-21",
+    "end_date": "2026-09-17",
+    "url": "https://weekly.ascii.jp/elem/000/004/428/4428206/",
+    "found_summary": "くら寿司は「うなぎと肉」フェアと同時に、夏限定メニューとして「濃厚えびまぜそば」も8月21日から販売する。",
+    "dedup_key": "06421263c7ea8b72",
+    "first_seen": "2026-08-22",
+    "image_url": "https://ascii.jp/img/2026/08/20/4515124/l/b56d7c072237532e.jpg"
+  },
+  "262eeb372f6359c9": {
+    "chain_name": "スシロー",
+    "menu_name": "「麺屋しらかわ」監修 鰹節香る醤油ラーメン",
+    "category": "コラボ",
+    "price": "480円～",
+    "start_date": "2026-08-19",
+    "end_date": "2026-08-30",
+    "url": "https://gourmet.watch.impress.co.jp/docs/news/2133414.html",
+    "found_summary": "スシローは「スシロー×食べログ」全国名店監修シリーズとして、岐阜・飛騨高山の人気店「麺屋しらかわ」監修の「鰹節香る醤油ラーメン」を8月19日から30日まで販売する。",
+    "dedup_key": "262eeb372f6359c9",
+    "first_seen": "2026-08-22",
+    "image_url": "https://gourmet.watch.impress.co.jp/img/grw/list/2133/414/00.jpg"
+  },
+  "08b6e0a5d1df9308": {
+    "chain_name": "デニーズ",
+    "menu_name": "夏のステーキフェア（グリルコンボ・サーロインステーキ等）",
+    "category": "期間限定",
+    "price": "不明",
+    "start_date": "2026-08-06",
+    "end_date": "2026-09-02",
+    "url": "https://entabe.jp/61107/2026-august-familyrestaurant-dennys-shabuyo-sato-summer-news",
+    "found_summary": "デニーズは「ジューシーなしあわせ、再発見」をテーマにした夏のステーキフェアを実施し、実施期間は2026年8月6日から9月2日までとなる。",
+    "dedup_key": "08b6e0a5d1df9308",
+    "first_seen": "2026-08-22",
+    "image_url": "https://image.entabe.jp/upload/20260803/images/rgegsrdfsdr.jpg"
   }
 }
