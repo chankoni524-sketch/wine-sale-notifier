@@ -153,5 +153,34 @@
     "dedup_key": "f0a9148d339dcba4",
     "first_seen": "2026-08-22",
     "image_url": "https://wine1227.itembox.cloud/product/572/000000057294/000000057294-01.jpg?size&#x3D;m&amp;w&#x3D;NDAw&amp;t&#x3D;20250207193111"
+  },
+  "4d522c722f848ad6": {
+    "product_name": "【限定特別セット】ロバート・スティーヴンス「ナパ・ヴァレー」贅沢赤白2本セット（シャルドネ＋カベルネ・ソーヴィニヨン）",
+    "category": "wine",
+    "shop": "wine&（ワイン＆リカーマルシェ）",
+    "bottle_count": "2",
+    "original_price_per_bottle": "6750",
+    "sale_price_per_bottle": "4490",
+    "discount_percent": "34",
+    "sale_period": "2026年7月20日0時 販売開始（お届けは8月10日以降、数量限定・在庫限り）",
+    "url": "https://wineand.jp/products/list?category_id=4",
+    "found_summary": "カリフォルニア・ナパヴァレー産のロバート・スティーヴンス赤白2本セットが、通常価格13,500円（税抜）から特別限定価格8,980円（税抜）に。1本あたり6,750円→4,490円で約34%オフとなる。",
+    "dedup_key": "4d522c722f848ad6",
+    "first_seen": "2026-08-23"
+  },
+  "c9a46433ff0f6380": {
+    "product_name": "ミケーレ・キアルロ チプレッシ ニッツァ 2022（赤ワイン）",
+    "category": "wine",
+    "shop": "カルディコーヒーファーム",
+    "bottle_count": "1",
+    "original_price_per_bottle": "4939",
+    "sale_price_per_bottle": "2816",
+    "discount_percent": "43",
+    "sale_period": "店舗セール時（詳細期間は記事掲載時点、要現地確認）",
+    "url": "https://news.yahoo.co.jp/expert/articles/56bfad95248a75235d825b33f32e1f1e6bbd3df8",
+    "found_summary": "カルディの店頭で発見されたイタリア・ニッツァDOCGの単品赤ワインが、定価4,939円から約43%オフの2,816円（税込）で販売されていた事例。値下げ幅が大きく話題になった商品。",
+    "dedup_key": "c9a46433ff0f6380",
+    "first_seen": "2026-08-23",
+    "image_url": "https://newsatcl-pctr.c.yimg.jp/t/iwiz-yn/creators/kozewaimmania/02532724/title-1773114715737.jpeg?exp=10800"
   }
 }
