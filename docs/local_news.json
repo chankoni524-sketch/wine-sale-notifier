@@ -52,5 +52,57 @@
     "dedup_key": "3473988c70adf267",
     "first_seen": "2026-08-23",
     "notified": false
+  },
+  "598de056f594f563": {
+    "title": "上野の森美術館大賞展（公募展）",
+    "category": "期間限定イベント",
+    "area": "上野駅",
+    "location": "上野の森美術館",
+    "event_date": "2026-09-10",
+    "end_date": "2026-09-29",
+    "url": "https://www.ueno-mori.org/exhibitions/?year=2026&month=9",
+    "found_summary": "上野の森美術館にて公募展「上野の森美術館大賞展」が2026年9月10日から9月29日まで本館1F・2Fで開催される。",
+    "dedup_key": "598de056f594f563",
+    "first_seen": "2026-08-23",
+    "notified": true
+  },
+  "7fb69ecf736606e1": {
+    "title": "千駄木いろいろイベント（9月）",
+    "category": "期間限定イベント",
+    "area": "千駄木駅",
+    "location": "千駄木露地",
+    "event_date": "2026-09-27",
+    "end_date": "2026-09-27",
+    "url": "https://ekitan.com/sta-info/station/2427",
+    "found_summary": "谷根千エリアの人気スポット「千駄木露地」で2026年9月27日にイベントが開催される予定。",
+    "dedup_key": "7fb69ecf736606e1",
+    "first_seen": "2026-08-23",
+    "notified": false
+  },
+  "817333be684fac60": {
+    "title": "無印良品 上野マルイ リニューアルオープン",
+    "category": "新規オープン",
+    "area": "上野駅",
+    "location": "上野マルイ",
+    "event_date": "2026-09-11",
+    "end_date": "",
+    "url": "https://www.muji.com/jp/ja/shop/detail/045451",
+    "found_summary": "上野マルイ内の無印良品が2026年9月11日（金）にリニューアルオープンする予定で、改装に伴い一時的に一部商品の取り扱いを休止する。",
+    "dedup_key": "817333be684fac60",
+    "first_seen": "2026-08-23",
+    "notified": true
+  },
+  "7a50845a9b9c170a": {
+    "title": "旧安田楠雄邸庭園 イベント（10月）",
+    "category": "期間限定イベント",
+    "area": "千駄木駅",
+    "location": "東京都名勝 旧安田楠雄邸庭園",
+    "event_date": "2026-10-25",
+    "end_date": "2026-10-25",
+    "url": "https://ekitan.com/sta-info/station/2427",
+    "found_summary": "千駄木駅・西日暮里駅近くの旧安田楠雄邸庭園にて2026年10月25日にイベントが開催される予定。",
+    "dedup_key": "7a50845a9b9c170a",
+    "first_seen": "2026-08-23",
+    "notified": false
   }
 }
