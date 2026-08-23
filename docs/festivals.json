@@ -354,5 +354,50 @@
     "dedup_key": "931eedfebfa2f316",
     "first_seen": "2026-08-22",
     "notified": false
+  },
+  "511c949b612431ba": {
+    "event_name": "チャイナフェスティバル2026",
+    "theme": "中国（中華グルメ・文化）",
+    "venue": "代々木公園 イベント広場／野外ステージ／ケヤキ並木",
+    "area": "渋谷区（代々木）",
+    "start_date": "2026-09-05",
+    "end_date": "2026-09-06",
+    "scale_note": "<cite index=\"79-1\">2017年に、日本人へ中国文化を紹介する民間交流イベントとして始まったチャイナフェスティバルは、2025年に出店者164社、20万人の来場を迎えた。</cite>",
+    "url": "https://www.yoyogievent.com/2026-yoyogi-china-festival/",
+    "found_summary": "<cite index=\"79-1\">「チャイナフェスティバル2026」が、2026年9月5日（土）と6日（日）に東京・代々木公園で開かれる。イベント広場、野外ステージ、ケヤキ並木を会場に、本格中華料理、音楽やダンス、中国文化の体験企画などが集まる。</cite><cite index=\"83-1\">会場には中国各地の料理を扱う飲食ブースが登場し、麻婆豆腐、小籠包、餃子、火鍋系メニューのほか、「麻辣湯」に焦点を当てた企画も展開される。</cite>",
+    "dedup_key": "511c949b612431ba",
+    "first_seen": "2026-08-23",
+    "notified": true,
+    "image_url": "https://www.yoyogievent.com/wp-content/uploads/2026/07/image-9.jpg"
+  },
+  "292d04f87326d3ac": {
+    "event_name": "東京ビーガングルメ祭り 2026 秋",
+    "theme": "ビーガン・プラントベースグルメ（台湾・韓国ブースも出店）",
+    "venue": "木場公園 イベント広場",
+    "area": "江東区",
+    "start_date": "2026-10-04",
+    "end_date": "2026-10-04",
+    "scale_note": "<cite index=\"74-1\">全国から人気Vege店が大集結するビーガン(100%植物性)フードフェスティバルで、日本最高クオリティのビーガンフードの他、台湾・韓国ブースにより、アジアのVEGANグルメも楽しめる。</cite>",
+    "url": "https://veganstart.jp/vegan_festival/",
+    "found_summary": "<cite index=\"72-1\">日本プラントベース市場協会が主催するVEGAN専門のフェスティバルで、2011年に名古屋でスタートして以来、東京・京都へ拡大し、年間総来場者数2万4000人以上を誇る国内最大級のVEGANフェスティバル。</cite>2026年秋は10月4日に木場公園で開催予定。",
+    "dedup_key": "292d04f87326d3ac",
+    "first_seen": "2026-08-23",
+    "notified": false,
+    "image_url": "https://veganstart.jp/wp-content/uploads/2024/08/stage-1531427_640.jpg"
+  },
+  "1b3df75501f0dba7": {
+    "event_name": "ヒルズ グルメバーガーグランプリ 2026",
+    "theme": "ハンバーガー（世界のバーガー）",
+    "venue": "六本木ヒルズ・麻布台ヒルズ・虎ノ門ヒルズ",
+    "area": "港区",
+    "start_date": "2026-07-01",
+    "end_date": "2026-08-31",
+    "scale_note": "<cite index=\"2-1\">37店舗が参加！世界のバーガー大集結</cite>",
+    "url": "https://www.walkerplus.com/event_list/08/ar0313/eg0117/",
+    "found_summary": "六本木ヒルズ・麻布台ヒルズ・虎ノ門ヒルズの3拠点合同で、<cite index=\"2-1\">37店舗が参加する世界のバーガーが集まるグルメイベント</cite>が8月31日まで開催中。",
+    "dedup_key": "1b3df75501f0dba7",
+    "first_seen": "2026-08-23",
+    "notified": true,
+    "image_url": "//ms-cache.walkerplus.com/walkertouch/wtd/event/89/l/438089_4.jpg"
   }
 }
