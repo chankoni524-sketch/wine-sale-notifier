@@ -399,5 +399,49 @@
     "first_seen": "2026-08-23",
     "notified": true,
     "image_url": "//ms-cache.walkerplus.com/walkertouch/wtd/event/89/l/438089_4.jpg"
+  },
+  "a94aeb7087410272": {
+    "event_name": "第17回 九州観光・物産フェアin代々木2026",
+    "theme": "九州グルメ・物産",
+    "venue": "代々木公園 イベント広場",
+    "area": "渋谷区",
+    "start_date": "2026-10-09",
+    "end_date": "2026-10-12",
+    "scale_note": "厳選された全60店舗が出店。博多ラーメンや地鶏の炭火焼きなど九州各県・沖縄のグルメが集結する都内最大級のグルメ祭。",
+    "url": "https://kyushu-yoyogipark.com/",
+    "found_summary": "九州各県と沖縄から選りすぐりの60店舗が集まる、代々木公園恒例の大型グルメ・物産イベント。",
+    "dedup_key": "a94aeb7087410272",
+    "first_seen": "2026-08-24",
+    "notified": false,
+    "image_url": "https://kyushu-yoyogipark.com/wp-content/themes/kyushu_fair/image/og_img.jpg"
+  },
+  "c4575032d698249d": {
+    "event_name": "INDONESIA-JAPAN FRIENDSHIP FESTIVAL 2026",
+    "theme": "インドネシア（食・文化）",
+    "venue": "代々木公園 イベント広場",
+    "area": "渋谷区",
+    "start_date": "2026-10-17",
+    "end_date": "2026-10-18",
+    "scale_note": "飲食ブースは約30、物販・展示ブースも約30を予定。インドネシア・日本料理店や関連団体が多数出店。",
+    "url": "https://www.yoyogikoen.info/indonesia-japan-friendship-festival-2026/",
+    "found_summary": "インドネシアと日本の交流を目的とした2日間のフェスティバルで、飲食・物販あわせて多数のブースが並ぶ。",
+    "dedup_key": "c4575032d698249d",
+    "first_seen": "2026-08-24",
+    "notified": false
+  },
+  "2085d8be3f508271": {
+    "event_name": "東京ナイトマーケット（秋開催）",
+    "theme": "アジア夜市・グルメ",
+    "venue": "代々木公園 ケヤキ並木",
+    "area": "渋谷区",
+    "start_date": "2026-10-21",
+    "end_date": "2026-10-25",
+    "scale_note": "2023年の初開催以来、累計60万人動員の人気夜フェス。有名店の人気メニューや異国料理など多彩な屋台フードが並ぶ。",
+    "url": "https://www.tokyonightstory.com/event/tokyo-night-market_202604/",
+    "found_summary": "アジアの夜市の熱気と渋谷カルチャーが融合するナイトイベントで、22時まで楽しめるグルメと音楽が魅力の秋開催回。",
+    "dedup_key": "2085d8be3f508271",
+    "first_seen": "2026-08-24",
+    "notified": false,
+    "image_url": "https://www.tokyonightstory.com/images/ogp.jpg"
   }
 }
