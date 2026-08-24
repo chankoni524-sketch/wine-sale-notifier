@@ -182,5 +182,50 @@
     "dedup_key": "c9a46433ff0f6380",
     "first_seen": "2026-08-23",
     "image_url": "https://newsatcl-pctr.c.yimg.jp/t/iwiz-yn/creators/kozewaimmania/02532724/title-1773114715737.jpeg?exp=10800"
+  },
+  "b422252adc2b85f6": {
+    "product_name": "グレイワッキ ソーヴィニヨンブラン マールボロ",
+    "category": "wine",
+    "shop": "しあわせワイン倶楽部（楽天市場/Yahoo!ショッピング等）",
+    "bottle_count": 1,
+    "original_price_per_bottle": 4400,
+    "sale_price_per_bottle": 2970,
+    "discount_percent": 33,
+    "sale_period": "輸入元協賛セール（期間記載なし、進行中）",
+    "url": "https://www.shiawasewine-c.com/?pid=176487533",
+    "found_summary": "ニュージーランド・マールボロ産の高評価白ワインが、輸入元協賛セールにより定価4,400円から33％オフの2,970円で販売中。",
+    "dedup_key": "b422252adc2b85f6",
+    "first_seen": "2026-08-24",
+    "image_url": "https://img06.shop-pro.jp/PA01131/940/product/176487533.jpg?cmsp_timestamp=20230807120639"
+  },
+  "04305a0fb340dc47": {
+    "product_name": "ロバート・スティーヴンス メリタージュ ナパヴァレー",
+    "category": "wine",
+    "shop": "しあわせワイン倶楽部（楽天市場/Yahoo!ショッピング等）",
+    "bottle_count": 1,
+    "original_price_per_bottle": 11000,
+    "sale_price_per_bottle": 5940,
+    "discount_percent": 45,
+    "sale_period": "終売セール（現地価格高騰による日本輸入停止に伴う在庫一掃、期間記載なし）",
+    "url": "https://www.shiawasewine-c.com/?pid=192677082",
+    "found_summary": "ナパ・ハイランズの生みの親が手掛けるカリフォルニア赤ワインが、輸入停止に伴う在庫一掃セールで通常11,000円から45％オフの5,940円に。",
+    "dedup_key": "04305a0fb340dc47",
+    "first_seen": "2026-08-24",
+    "image_url": "https://img06.shop-pro.jp/PA01131/940/product/192677082.jpg?cmsp_timestamp=20260727112358"
+  },
+  "7d187255678082da": {
+    "product_name": "クロスローズ by ラッド カベルネ・ソーヴィニヨン オークヴィル・エステート",
+    "category": "wine",
+    "shop": "世界のワイン葡萄屋（budouya.jp）",
+    "bottle_count": 1,
+    "original_price_per_bottle": 15950,
+    "sale_price_per_bottle": 11197,
+    "discount_percent": 30,
+    "sale_period": "セール特価（進行中、期間記載なし）",
+    "url": "https://www.budouya.jp/products/detail/3973",
+    "found_summary": "ナパ・オークヴィルの銘醸畑ブドウを使用したラッド・エステートのセカンドブランドが、希望小売価格15,950円から30％オフのセール特価11,197円で販売。",
+    "dedup_key": "7d187255678082da",
+    "first_seen": "2026-08-24",
+    "image_url": "https://www.budouya.jp/html/upload/save_image/10151733_5da5845dc6229.jpg"
   }
 }
