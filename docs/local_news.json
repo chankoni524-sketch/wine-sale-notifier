@@ -104,5 +104,19 @@
     "dedup_key": "7a50845a9b9c170a",
     "first_seen": "2026-08-23",
     "notified": false
+  },
+  "89690b8c79ec6931": {
+    "title": "上野ゾク夏祭り",
+    "category": "お祭り",
+    "area": "上野駅",
+    "location": "上野恩賜公園・噴水広場",
+    "event_date": "2026-09-19",
+    "end_date": "2026-09-23",
+    "url": "https://www.uuum.co.jp/news/182251",
+    "found_summary": "動画クリエイター「たっくーTVれいでぃお」が全面プロデュースする大型ホラーイベントで、怪談寄席やホラー映画上映、ホラーBON踊りなどが展開される。",
+    "dedup_key": "89690b8c79ec6931",
+    "first_seen": "2026-08-24",
+    "notified": true,
+    "image_url": "https://www.uuum.co.jp/wp-content/uploads/2026/07/OGP-8.jpg"
   }
 }
