@@ -118,5 +118,31 @@
     "first_seen": "2026-08-24",
     "notified": true,
     "image_url": "https://www.uuum.co.jp/wp-content/uploads/2026/07/OGP-8.jpg"
+  },
+  "6554a7ad71a6857e": {
+    "title": "ケンエレファント×手塚治虫キャラクターズショップ",
+    "category": "期間限定イベント",
+    "area": "上野駅",
+    "location": "上野マルイ 5Fカレンダリウム",
+    "event_date": "2026-08-28",
+    "end_date": "2026-09-06",
+    "url": "https://tezukaosamu.net/jp/mushi/entry/34996.html",
+    "found_summary": "手塚治虫プロダクション監修の立体化ソフビシリーズやカプセルトイ、コラボグッズを販売する期間限定ショップが上野マルイにオープンする。",
+    "dedup_key": "6554a7ad71a6857e",
+    "first_seen": "2026-08-25",
+    "notified": true
+  },
+  "f3e6ced06536e217": {
+    "title": "よむよむ展（絵を見る？絵をよむ？）",
+    "category": "期間限定イベント",
+    "area": "上野駅",
+    "location": "上野の森美術館ギャラリー",
+    "event_date": "2026-09-18",
+    "end_date": "2026-09-29",
+    "url": "https://www.ueno-mori.org/exhibitions/article.cgi?id=12694584",
+    "found_summary": "上野の森美術館の所蔵作品を紹介する展覧会で、生き物や場面が描かれた印象的な作品を通して絵をじっくり読み解くことをテーマにした無料の企画展。",
+    "dedup_key": "f3e6ced06536e217",
+    "first_seen": "2026-08-25",
+    "notified": true
   }
 }
