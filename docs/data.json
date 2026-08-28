@@ -227,5 +227,35 @@
     "dedup_key": "7d187255678082da",
     "first_seen": "2026-08-24",
     "image_url": "https://www.budouya.jp/html/upload/save_image/10151733_5da5845dc6229.jpg"
+  },
+  "569558c87e4f70b9": {
+    "product_name": "グレイワッキ ソーヴィニヨンブラン マールボロ 2024",
+    "category": "wine",
+    "shop": "しあわせワイン倶楽部",
+    "bottle_count": "1",
+    "original_price_per_bottle": "4400",
+    "sale_price_per_bottle": "2970",
+    "discount_percent": "33",
+    "sale_period": "輸入元協賛セール開催中（終了日未記載）",
+    "url": "https://www.shiawasewine-c.com/?pid=176487533",
+    "found_summary": "ワイン評価誌で歴代最高得点を獲得したNZ産ソーヴィニヨン・ブランが、輸入元協賛セールにより定価4,400円から33%オフの2,970円で販売されている。",
+    "dedup_key": "569558c87e4f70b9",
+    "first_seen": "2026-08-28",
+    "image_url": "https://img06.shop-pro.jp/PA01131/940/product/176487533.jpg?cmsp_timestamp=20230807120639"
+  },
+  "7c2bb6d22a4f479d": {
+    "product_name": "ロバート・スティーヴンス メリタージュ ナパヴァレー",
+    "category": "wine",
+    "shop": "しあわせワイン倶楽部",
+    "bottle_count": "1",
+    "original_price_per_bottle": "11000",
+    "sale_price_per_bottle": "5940",
+    "discount_percent": "45",
+    "sale_period": "終売（在庫一掃）セール開催中",
+    "url": "https://www.shiawasewine-c.com/?pid=192677082",
+    "found_summary": "現地価格高騰による日本輸入停止に伴う在庫一掃セールで、通常11,000円のナパヴァレー産カベルネ主体の赤ワインが45%オフの5,940円で販売されている。",
+    "dedup_key": "7c2bb6d22a4f479d",
+    "first_seen": "2026-08-28",
+    "image_url": "https://img06.shop-pro.jp/PA01131/940/product/192677082.jpg?cmsp_timestamp=20260727112358"
   }
 }
