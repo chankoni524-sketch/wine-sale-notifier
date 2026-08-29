@@ -51,7 +51,7 @@
     "found_summary": "町屋文化センターで開催される囲碁大会イベントで、入場無料。",
     "dedup_key": "3473988c70adf267",
     "first_seen": "2026-08-23",
-    "notified": false
+    "notified": true
   },
   "598de056f594f563": {
     "title": "上野の森美術館大賞展（公募展）",
@@ -77,7 +77,7 @@
     "found_summary": "谷根千エリアの人気スポット「千駄木露地」で2026年9月27日にイベントが開催される予定。",
     "dedup_key": "7fb69ecf736606e1",
     "first_seen": "2026-08-23",
-    "notified": false
+    "notified": true
   },
   "817333be684fac60": {
     "title": "無印良品 上野マルイ リニューアルオープン",
@@ -144,5 +144,33 @@
     "dedup_key": "f3e6ced06536e217",
     "first_seen": "2026-08-25",
     "notified": true
+  },
+  "9baa43dbacdc5f9b": {
+    "title": "諏方神社例大祭",
+    "category": "お祭り",
+    "area": "西日暮里駅",
+    "location": "諏方神社（日暮里・谷中の総鎮守）",
+    "event_date": "2026-08-29",
+    "end_date": "2026-08-30",
+    "url": "https://www.enjoytokyo.jp/event/644667/",
+    "found_summary": "日暮里・谷中の総鎮守である諏方神社の例大祭が8月29日（氏子祭）・30日（本社神輿渡御）に開催され、西日暮里の道灌山通りや日暮里駅前を神輿が練り歩く。",
+    "dedup_key": "9baa43dbacdc5f9b",
+    "first_seen": "2026-08-29",
+    "notified": true,
+    "image_url": "https://rstatic.enjoytokyo.jp/assets/images/event/d9/644667/img_1.jpg?1787619545&p=t&w=1200"
+  },
+  "d2637a81359cc4f6": {
+    "title": "BLACK LAGOON 25th Anniversary POP UP SHOP in マルイ（上野会場）",
+    "category": "期間限定イベント",
+    "area": "上野駅",
+    "location": "上野マルイ 5F",
+    "event_date": "2026-10-16",
+    "end_date": "2026-10-25",
+    "url": "https://collabo-cafe.com/events/collabo/black-lagoon-pop-up-shop-ueno-marui-2026/",
+    "found_summary": "人気漫画「BLACK LAGOON」25周年を記念したポップアップショップが上野マルイ5Fにて<cite index=\"141-3\">2026年10月16日〜10月25日まで上野マルイ5Fにて開催され、山中虎鉄先生による「ランジェリー」をコンセプトにしたレヴィ・バラライカの新規描き下ろしイラストを使用した限定商品などが展開される。</cite>",
+    "dedup_key": "d2637a81359cc4f6",
+    "first_seen": "2026-08-29",
+    "notified": false,
+    "image_url": "https://collabo-cafe.com/wp-content/uploads/f8a5a181eb4949c39c944c3e9ef630b2.jpg"
   }
 }
