@@ -8,7 +8,6 @@ DATA_FILES = [
     DOCS_DIR / "data.json",
     DOCS_DIR / "festivals.json",
     DOCS_DIR / "menus.json",
-    DOCS_DIR / "sports_tickets.json",
     DOCS_DIR / "local_news.json",
 ]
 

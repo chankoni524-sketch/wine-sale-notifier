@@ -2,7 +2,7 @@ name: 期間限定メニュー情報の自動収集
 
 on:
   schedule:
-    - cron: "30 23 * * *"  # 日本時間 毎朝8:30
+    - cron: "10 3 * * 3"  # 日本時間 毎週水曜12:10
   workflow_dispatch: {}
 
 permissions:

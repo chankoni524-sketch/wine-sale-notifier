@@ -2,7 +2,7 @@ name: ワインセール情報の自動収集
 
 on:
   schedule:
-    - cron: "0 23 * * *"  # 日本時間 毎朝8:00
+    - cron: "0 3 * * 3"  # 日本時間 毎週水曜12:00
   workflow_dispatch: {}
 
 permissions:

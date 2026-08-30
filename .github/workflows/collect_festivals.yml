@@ -2,7 +2,7 @@ name: フードフェス情報の自動収集
 
 on:
   schedule:
-    - cron: "15 23 * * *"  # 日本時間 毎朝8:15
+    - cron: "5 3 * * 3"  # 日本時間 毎週水曜12:05
   workflow_dispatch: {}
 
 permissions:

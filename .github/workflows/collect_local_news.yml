@@ -2,7 +2,7 @@ name: 地域ニュースの自動収集
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # 日本時間 毎朝9:00
+    - cron: "15 3 * * 3"  # 日本時間 毎週水曜12:15
   workflow_dispatch: {}
 
 permissions:
