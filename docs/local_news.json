@@ -172,5 +172,19 @@
     "first_seen": "2026-08-29",
     "notified": false,
     "image_url": "https://collabo-cafe.com/wp-content/uploads/f8a5a181eb4949c39c944c3e9ef630b2.jpg"
+  },
+  "a1d20a80aa37bd93": {
+    "title": "サルサストリート2026 UENO de BUENO",
+    "category": "お祭り",
+    "area": "上野駅",
+    "location": "上野恩賜公園 噴水広場（竹の台広場）",
+    "event_date": "2026-10-03",
+    "end_date": "2026-10-04",
+    "url": "https://www.uenoevent.com/2026-ueno-salsa-street-ueno-de-bueno/",
+    "found_summary": "サルサ音楽・サルサダンス・サルサ料理をテーマにしたラテン・カリブ文化を体感できる入場無料の国際交流フェスティバルが上野恩賜公園噴水広場で開催される。",
+    "dedup_key": "a1d20a80aa37bd93",
+    "first_seen": "2026-08-30",
+    "notified": false,
+    "image_url": "https://www.uenoevent.com/wp-content/uploads/2026/01/image-2.jpg"
   }
 }
