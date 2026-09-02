@@ -257,5 +257,50 @@
     "dedup_key": "7c2bb6d22a4f479d",
     "first_seen": "2026-08-28",
     "image_url": "https://img06.shop-pro.jp/PA01131/940/product/192677082.jpg?cmsp_timestamp=20260727112358"
+  },
+  "6d2d66c77feb82da": {
+    "product_name": "Myles & Moore Pinot Noir 2022",
+    "category": "wine",
+    "shop": "Winelife ONLINE SHOP (BASE)",
+    "bottle_count": 1,
+    "original_price_per_bottle": 4950,
+    "sale_price_per_bottle": 3465,
+    "discount_percent": 30,
+    "sale_period": "アウトレットセール中（終了日不明）",
+    "url": "https://winelife.base.shop/",
+    "found_summary": "<cite index=\"21-1\">[アウトレット]2022 マイルス＆ムーア ピノノワールが30%OFFで¥4,950から¥3,465に値下げされている。</cite>",
+    "dedup_key": "6d2d66c77feb82da",
+    "first_seen": "2026-09-02",
+    "image_url": "https://baseec-img-mng.akamaized.net/images/user/logo/e7e9e751a2d1934426248ced073f480f.jpg?imformat=generic&q=90&im=Resize,width=1200,height=1200,aspect=fit,type=normal;Crop,width=1200,height=1200,gravity=Center,allowExpansion"
+  },
+  "56c5a13a2c0e3de3": {
+    "product_name": "Myles & Moore Cabernet Sauvignon 2022",
+    "category": "wine",
+    "shop": "Winelife ONLINE SHOP (BASE)",
+    "bottle_count": 1,
+    "original_price_per_bottle": 4950,
+    "sale_price_per_bottle": 3465,
+    "discount_percent": 30,
+    "sale_period": "アウトレットセール中（終了日不明）",
+    "url": "https://winelife.base.shop/",
+    "found_summary": "<cite index=\"21-1\">[アウトレット]2022 マイルス＆ムーア カベルネソーヴィニヨンが30%OFFで¥4,950から¥3,465に値下げされている。</cite>",
+    "dedup_key": "56c5a13a2c0e3de3",
+    "first_seen": "2026-09-02",
+    "image_url": "https://baseec-img-mng.akamaized.net/images/user/logo/e7e9e751a2d1934426248ced073f480f.jpg?imformat=generic&q=90&im=Resize,width=1200,height=1200,aspect=fit,type=normal;Crop,width=1200,height=1200,gravity=Center,allowExpansion"
+  },
+  "4d041e8b993f3b4d": {
+    "product_name": "2018 シャトー・イガイタカハ ジヨン カベルネソーヴィニヨン",
+    "category": "wine",
+    "shop": "Winelife ONLINE SHOP (BASE)",
+    "bottle_count": 1,
+    "original_price_per_bottle": 11000,
+    "sale_price_per_bottle": 5500,
+    "discount_percent": 50,
+    "sale_period": "アウトレットセール中（終了日不明）",
+    "url": "https://winelife.base.shop/",
+    "found_summary": "<cite index=\"21-1\">[アウトレット] 2018 シャトー・イガイタカハ ジヨン カベルネソーヴィニヨンが50%OFFで¥11,000から¥5,500に値下げされている。</cite>",
+    "dedup_key": "4d041e8b993f3b4d",
+    "first_seen": "2026-09-02",
+    "image_url": "https://baseec-img-mng.akamaized.net/images/user/logo/e7e9e751a2d1934426248ced073f480f.jpg?imformat=generic&q=90&im=Resize,width=1200,height=1200,aspect=fit,type=normal;Crop,width=1200,height=1200,gravity=Center,allowExpansion"
   }
 }
