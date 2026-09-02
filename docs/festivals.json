@@ -501,7 +501,7 @@
     "found_summary": "北海道の海鮮・肉料理・スイーツなど多彩なグルメが集まる秋の風物詩的な大型フードイベント。",
     "dedup_key": "acd279e797c30574",
     "first_seen": "2026-08-28",
-    "notified": false,
+    "notified": true,
     "image_url": "https://www.yoyogikoen.info/wp-content/uploads/2026/08/image.png"
   },
   "d5ebfd4021fee24d": {
@@ -560,7 +560,7 @@
     "found_summary": "サルサをテーマにした国際交流フードフェスで、ラテン・カリブ料理の屋台やショップが50店以上集まる（前年実績）。",
     "dedup_key": "37f34de2b89f5f1e",
     "first_seen": "2026-08-29",
-    "notified": false,
+    "notified": true,
     "image_url": "https://rstatic.enjoytokyo.jp/assets/images/event/05/1486314/img_1.jpg?1768813950&p=t&w=1200"
   },
   "28df7238a4741d90": {
@@ -607,5 +607,95 @@
     "first_seen": "2026-08-29",
     "notified": false,
     "image_url": "https://event.exantenna.net/wp3/wp-content/uploads/2024/07/2026-09-26-namaste-india-1.jpg"
+  },
+  "4ea16f744bccbcfc": {
+    "event_name": "上野ゾク夏祭り",
+    "theme": "ホラー・お化け屋敷(シルバーウィーク特別企画)",
+    "venue": "上野恩賜公園 噴水前広場",
+    "area": "台東区",
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-23",
+    "scale_note": "<cite index=\"15-1\">UUUM主催・たっくー全面プロデュース！シルバーウィークの上野公園が恐怖に染まる「上野ゾク夏祭り」開催決定！</cite>飲食を含む屋台の具体的な出店数は公表情報からは不明。",
+    "url": "https://tokyofesta.com/tag/ueno-park/",
+    "found_summary": "上野公園でシルバーウィークに開催されるホラーテーマの夏祭りで、UUUMが主催・プロデュースする話題のイベント。",
+    "dedup_key": "4ea16f744bccbcfc",
+    "first_seen": "2026-09-02",
+    "notified": true,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2025/08/tokyofesta.jpg"
+  },
+  "e1582db19fddd1b7": {
+    "event_name": "Tokyo江戸ウィーク",
+    "theme": "盆踊り・屋台グルメ・日本酒",
+    "venue": "上野恩賜公園 噴水前広場",
+    "area": "台東区",
+    "start_date": "2026-10-09",
+    "end_date": "2026-10-12",
+    "scale_note": "<cite index=\"20-1\">和の楽しさをぎゅっと上野に。盆踊り、屋台グルメ、日本酒、生ライブとみんなで楽しめる4日間です</cite>",
+    "url": "https://tokyofesta.com/23ku/32547/",
+    "found_summary": "上野恩賜公園で開催される盆踊りと屋台グルメ、日本酒が楽しめる4日間のイベント。",
+    "dedup_key": "e1582db19fddd1b7",
+    "first_seen": "2026-09-02",
+    "notified": false,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2026/08/yataiwan.webp"
+  },
+  "cd6b6da33bc8d3d5": {
+    "event_name": "屋台湾フェス2026(台湾夜市)",
+    "theme": "台湾・夜市グルメ",
+    "venue": "日比谷公園 にれのき広場",
+    "area": "千代田区",
+    "start_date": "2026-09-03",
+    "end_date": "2026-09-06",
+    "scale_note": "<cite index=\"10-1\">台湾の「夜市」をテーマにした屋台グルメイベントが初開催。屋台グルメや台湾ビール、スイーツが一堂に会するほか、夜には願い事を書いたランタンを夜空に放つ「スカイランタン体験」も期間中毎日実施予定</cite>",
+    "url": "https://tokyofesta.com/23ku/32547/",
+    "found_summary": "日比谷公園で初開催される台湾の夜市をテーマにしたグルメイベントで、屋台グルメやスカイランタン体験も楽しめる。",
+    "dedup_key": "cd6b6da33bc8d3d5",
+    "first_seen": "2026-09-02",
+    "notified": true,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2026/08/yataiwan.webp"
+  },
+  "3ac3e53333eec673": {
+    "event_name": "熱狂ラーメン祭",
+    "theme": "ラーメン",
+    "venue": "中野四季の森公園 イベント広場",
+    "area": "中野区",
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-27",
+    "scale_note": "<cite index=\"16-1\">開催概要開催日時：2026年9月19日(土)～27日(日) 10:00～20:00【第1クール】9/19〜9/20【第2クール】9/22〜9/23【第3クール】9/25〜9/27開催場所：中野四季の森公園 イベント広場主催：熱狂ラーメン祭実</cite>",
+    "url": "https://tokyofesta.com/",
+    "found_summary": "中野四季の森公園で開催される、全国各地の人気ラーメン店が出店するグルメイベント。",
+    "dedup_key": "3ac3e53333eec673",
+    "first_seen": "2026-09-02",
+    "notified": true,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2025/08/tokyofesta.jpg"
+  },
+  "87c3b34b2d964a91": {
+    "event_name": "大江戸ビール祭り2026秋",
+    "theme": "クラフトビール・グルメ",
+    "venue": "品川インターシティ S&R棟前広場",
+    "area": "品川区",
+    "start_date": "2026-09-01",
+    "end_date": "2026-09-12",
+    "scale_note": "<cite index=\"12-1\">開催概要開催日時：2026年シーズン1：9月1日〜5日シーズン2：9月8日〜12日・平日：17時〜22時・土曜：12時〜18時開催場所：品川インターシティ S＆R棟前広場主催：大江戸ビール祭り実行委員会入場無料</cite>",
+    "url": "https://tokyofesta.com/tag/food/",
+    "found_summary": "品川インターシティで2部制で開催される、多彩なクラフトビールとフードが楽しめるビール祭り。",
+    "dedup_key": "87c3b34b2d964a91",
+    "first_seen": "2026-09-02",
+    "notified": true,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2025/08/tokyofesta.jpg"
+  },
+  "3a6cb69d2c549ef5": {
+    "event_name": "フィリピンフェスティバル東京2026",
+    "theme": "フィリピングルメ・文化",
+    "venue": "代々木公園 イベント広場",
+    "area": "渋谷区",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-29",
+    "scale_note": "<cite index=\"24-1\">Philippine Festival Tokyo 2026日程：2026年11月28日(土)～29日(日)会場：代々木公園イベント広場入場無料</cite>",
+    "url": "https://tokyofesta.com/23ku/28125/",
+    "found_summary": "代々木公園で開催される、フィリピンの食文化と芸能を楽しめる大規模フェスティバル。",
+    "dedup_key": "3a6cb69d2c549ef5",
+    "first_seen": "2026-09-02",
+    "notified": false,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2026/02/taiwan-1.png"
   }
 }
