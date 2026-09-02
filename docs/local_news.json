@@ -37,7 +37,7 @@
     "found_summary": "カリブ海・ラテンアメリカ文化を体感できる野外フェスティバルで、ダンスや音楽、料理などを楽しめる入場無料の2日間のイベント。",
     "dedup_key": "41eae8fe3f1b034a",
     "first_seen": "2026-08-23",
-    "notified": false,
+    "notified": true,
     "image_url": "https://www.uenopark.info/wp-content/uploads/2026/01/image-12.jpg"
   },
   "3473988c70adf267": {
@@ -184,7 +184,33 @@
     "found_summary": "サルサ音楽・サルサダンス・サルサ料理をテーマにしたラテン・カリブ文化を体感できる入場無料の国際交流フェスティバルが上野恩賜公園噴水広場で開催される。",
     "dedup_key": "a1d20a80aa37bd93",
     "first_seen": "2026-08-30",
-    "notified": false,
+    "notified": true,
     "image_url": "https://www.uenoevent.com/wp-content/uploads/2026/01/image-2.jpg"
+  },
+  "aa89b54420d0e45e": {
+    "title": "絵を描く楽しさをひろげる",
+    "category": "期間限定イベント",
+    "area": "上野駅",
+    "location": "上野の森美術館",
+    "event_date": "2026-09-10",
+    "end_date": "2026-09-29",
+    "url": "https://ekitan.com/sta-info/station/1627",
+    "found_summary": "上野の森美術館で2026年9月10日から9月29日まで開催予定の展示イベント。",
+    "dedup_key": "aa89b54420d0e45e",
+    "first_seen": "2026-09-02",
+    "notified": true
+  },
+  "1dd3b4e5e731e540": {
+    "title": "幸運の兆し…月の香りをテーマにした展示",
+    "category": "期間限定イベント",
+    "area": "上野駅",
+    "location": "Azur rose Galerie",
+    "event_date": "2026-09-24",
+    "end_date": "2026-10-04",
+    "url": "https://ekitan.com/sta-info/station/1627",
+    "found_summary": "上野駅・根津駅周辺のAzur rose Galerieで2026年9月24日から10月4日まで開催予定の展示イベント。",
+    "dedup_key": "1dd3b4e5e731e540",
+    "first_seen": "2026-09-02",
+    "notified": true
   }
 }
