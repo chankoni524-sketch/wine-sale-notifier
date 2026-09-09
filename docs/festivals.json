@@ -382,7 +382,7 @@
     "found_summary": "<cite index=\"72-1\">日本プラントベース市場協会が主催するVEGAN専門のフェスティバルで、2011年に名古屋でスタートして以来、東京・京都へ拡大し、年間総来場者数2万4000人以上を誇る国内最大級のVEGANフェスティバル。</cite>2026年秋は10月4日に木場公園で開催予定。",
     "dedup_key": "292d04f87326d3ac",
     "first_seen": "2026-08-23",
-    "notified": false,
+    "notified": true,
     "image_url": "https://veganstart.jp/wp-content/uploads/2024/08/stage-1531427_640.jpg"
   },
   "1b3df75501f0dba7": {
@@ -412,7 +412,7 @@
     "found_summary": "九州各県と沖縄から選りすぐりの60店舗が集まる、代々木公園恒例の大型グルメ・物産イベント。",
     "dedup_key": "a94aeb7087410272",
     "first_seen": "2026-08-24",
-    "notified": false,
+    "notified": true,
     "image_url": "https://kyushu-yoyogipark.com/wp-content/themes/kyushu_fair/image/og_img.jpg"
   },
   "c4575032d698249d": {
@@ -635,7 +635,7 @@
     "found_summary": "上野恩賜公園で開催される盆踊りと屋台グルメ、日本酒が楽しめる4日間のイベント。",
     "dedup_key": "e1582db19fddd1b7",
     "first_seen": "2026-09-02",
-    "notified": false,
+    "notified": true,
     "image_url": "https://tokyofesta.com/wp-content/uploads/2026/08/yataiwan.webp"
   },
   "cd6b6da33bc8d3d5": {
@@ -697,5 +697,65 @@
     "first_seen": "2026-09-02",
     "notified": false,
     "image_url": "https://tokyofesta.com/wp-content/uploads/2026/02/taiwan-1.png"
+  },
+  "b6abd9e579106c8e": {
+    "event_name": "秋のうまいもの物産展",
+    "theme": "全国各地のご当地グルメ・物産(豚まん・ラーメン・スイーツなど)",
+    "venue": "松坂屋上野店 6階 催事場",
+    "area": "台東区(上野)",
+    "start_date": "2026-09-10",
+    "end_date": "2026-09-16",
+    "scale_note": "全国各地の選りすぐりグルメブランドが多数出店する物産展。〈551 HORAI〉〈玉出 木村家〉〈支那そばや〉など全国20〜50ブランドが集結する年1回の大型企画",
+    "url": "https://prtimes.jp/main/html/rd/p/000002498.000005342.html",
+    "found_summary": "松坂屋上野店で毎年恒例の「秋のうまいもの物産展」が開催され、<cite index=\"22-1\">551蓬莱の豚まんや鎌倉紅谷のクルミッ子、赤福の水羊羹など全国20超の店の看板商品が並ぶ</cite>。<cite index=\"22-1\">支那そばやが初めてイートインで出店し、たこ焼きや焼き芋の実演販売も予定されている</cite>。",
+    "dedup_key": "b6abd9e579106c8e",
+    "first_seen": "2026-09-09",
+    "notified": true,
+    "image_url": "https://prcdn.freetls.fastly.net/release_image/5342/2498/5342-2498-63c56e08d42b023bf4e17e24e0847ac9-330x330.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  },
+  "841f7a972001af60": {
+    "event_name": "オクトーバーフェスト2026 in 芝公園 ～Autumn～",
+    "theme": "ドイツ(ビール・ドイツ料理)",
+    "venue": "都立芝公園4号地(御成門駅前広場)",
+    "area": "港区",
+    "start_date": "2026-09-11",
+    "end_date": "2026-09-23",
+    "scale_note": "日本で唯一ミュンヘン公認のオクトーバーフェスト。ドイツ直輸入樽生ビールとソーセージ・プレッツェル・シュニッツェルなど本場グルメ、音楽ライブも展開する大型ビアフェス",
+    "url": "https://www.tokyofes.info/2026/oktoberfest-shiba-park-2026/",
+    "found_summary": "<cite index=\"36-1\">「オクトーバーフェスト2026 in 芝公園 オータム」が2026年9月11日から9月23日まで東京・都立芝公園4号地にて開催される</cite>。<cite index=\"36-1\">本イベントは日本で唯一、ドイツ・ミュンヘンの公認を得ているオクトーバーフェストだ</cite>。",
+    "dedup_key": "841f7a972001af60",
+    "first_seen": "2026-09-09",
+    "notified": true,
+    "image_url": "https://www.tokyofes.info/wp-content/uploads/2026/07/image-31.jpg"
+  },
+  "d697be5942885e26": {
+    "event_name": "オクトーバーフェスト2026 in 豊洲",
+    "theme": "ドイツ(ビール・ドイツ料理)",
+    "venue": "アーバンドック ららぽーと豊洲 中庭シーサイドデッキ",
+    "area": "江東区",
+    "start_date": "2026-09-18",
+    "end_date": "2026-10-12",
+    "scale_note": "芝公園会場と並行開催される豊洲会場。海辺のロケーションでドイツビール・グルメ・音楽ライブを楽しめる大型ビアフェス、3L巨大ジョッキなどの企画も展開",
+    "url": "https://prtimes.jp/main/html/rd/p/000000069.000047941.html",
+    "found_summary": "<cite index=\"40-1\">オクトーバーフェスト実行委員会は、9月18日からアーバンドック ららぽーと豊洲 中庭シーサイドデッキで開催し、東京タワーを望む芝公園と海風を感じる豊洲、異なるロケーションを舞台に本場ドイツのビールや料理、音楽ライブを楽しめる</cite>イベントで、<cite index=\"35-1\">豊洲は9月18日(金)～10月12日(月・祝)までの25日間開催される</cite>。",
+    "dedup_key": "d697be5942885e26",
+    "first_seen": "2026-09-09",
+    "notified": true,
+    "image_url": "https://prcdn.freetls.fastly.net/release_image/47941/69/47941-69-976d9213df444c8c7693d7b79169804a-1448x929.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  },
+  "aac58b0f00a4f073": {
+    "event_name": "ビアフェス2026(ご当地クラフトビール×ジビエ)",
+    "theme": "クラフトビール・ジビエグルメ",
+    "venue": "東京ビッグサイト",
+    "area": "江東区",
+    "start_date": "2026-09-25",
+    "end_date": "不明(詳細未確認)",
+    "scale_note": "全国各地のご当地クラフトビールとジビエ料理が集まる大型ビアフェス。スタンプラリー企画などもあり",
+    "url": "https://tokyofesta.com/",
+    "found_summary": "<cite index=\"15-1\">今年も東京ビッグサイトにビアフェスが登場。全国各地のご当地クラフトビールとジビエをフードで楽しめるイベントで、「五酒飲帳」を使ったビールのスタンプラリーも実施される</cite>。",
+    "dedup_key": "aac58b0f00a4f073",
+    "first_seen": "2026-09-09",
+    "notified": true,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2025/08/tokyofesta.jpg"
   }
 }
