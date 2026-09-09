@@ -212,5 +212,32 @@
     "dedup_key": "1dd3b4e5e731e540",
     "first_seen": "2026-09-02",
     "notified": true
+  },
+  "03199cb65714ebdd": {
+    "title": "日暮里繊維街ワークショップ（2026年9月開催）",
+    "category": "期間限定イベント",
+    "area": "日暮里駅",
+    "location": "日暮里繊維街 Craft Apartment 日暮里",
+    "event_date": "2026-09-16",
+    "end_date": "2026-09-25",
+    "url": "https://www.nippori-senigai.com/en/2026/08/24/workshop202609/",
+    "found_summary": "日暮里繊維街で「Craft Apartment 日暮里」のハンドメイド作家を講師に迎えたワークショップが開催され、9月16日には羊毛フェルトでハニワを作る回、9月25日には縫わずに作るミニがま口の回が予定されている。",
+    "dedup_key": "03199cb65714ebdd",
+    "first_seen": "2026-09-09",
+    "notified": true
+  },
+  "23c3b7bb87259729": {
+    "title": "谷中骨董市",
+    "category": "お祭り",
+    "area": "西日暮里駅",
+    "location": "延命院 駐車場（西日暮里3-10-1）",
+    "event_date": "2026-10-10",
+    "end_date": "2026-10-11",
+    "url": "https://antique-leaves.com/?mode=cate&cbid=2918647&csid=0",
+    "found_summary": "西日暮里の延命院駐車場にて、10月10日（土）・11日（日）に骨董市・蚤の市イベント「谷中骨董市」が開催予定。",
+    "dedup_key": "23c3b7bb87259729",
+    "first_seen": "2026-09-09",
+    "notified": true,
+    "image_url": "https://img07.shop-pro.jp/PA01325/600/category/2918647_0.jpg?cmsp_timestamp=20260407102004"
   }
 }
