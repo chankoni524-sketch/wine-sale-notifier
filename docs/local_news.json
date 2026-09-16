@@ -170,7 +170,7 @@
     "found_summary": "人気漫画「BLACK LAGOON」25周年を記念したポップアップショップが上野マルイ5Fにて<cite index=\"141-3\">2026年10月16日〜10月25日まで上野マルイ5Fにて開催され、山中虎鉄先生による「ランジェリー」をコンセプトにしたレヴィ・バラライカの新規描き下ろしイラストを使用した限定商品などが展開される。</cite>",
     "dedup_key": "d2637a81359cc4f6",
     "first_seen": "2026-08-29",
-    "notified": false,
+    "notified": true,
     "image_url": "https://collabo-cafe.com/wp-content/uploads/f8a5a181eb4949c39c944c3e9ef630b2.jpg"
   },
   "a1d20a80aa37bd93": {
@@ -239,5 +239,33 @@
     "first_seen": "2026-09-09",
     "notified": true,
     "image_url": "https://img07.shop-pro.jp/PA01325/600/category/2918647_0.jpg?cmsp_timestamp=20260407102004"
+  },
+  "2d2cd85f772e5c02": {
+    "title": "谷中まつり2026",
+    "category": "お祭り",
+    "area": "千駄木駅・日暮里駅",
+    "location": "防災広場「初音の森」ほか谷中地区一帯（旧吉田屋酒店、谷中五重塔跡こども広場、谷中小学校）",
+    "event_date": "2026-10-10",
+    "end_date": "2026-10-11",
+    "url": "https://t-navi.city.taito.lg.jp/event?sort=access",
+    "found_summary": "谷中地区で毎年秋に開催される地域まつりで、2026年は10月10日（土）・11日（日）の開催が予定されている。メイン会場の防災広場「初音の森」を中心に、周辺の複数会場でステージイベントなどが行われる。",
+    "dedup_key": "2d2cd85f772e5c02",
+    "first_seen": "2026-09-16",
+    "notified": true,
+    "image_url": "https://t-navi.city.taito.lg.jp/images/ogp.png"
+  },
+  "e24df86148e661a0": {
+    "title": "谷中菊まつり2026",
+    "category": "お祭り",
+    "area": "千駄木駅・日暮里駅",
+    "location": "大円寺",
+    "event_date": "2026-10-10",
+    "end_date": "2026-10-11",
+    "url": "https://t-navi.city.taito.lg.jp/event?sort=access",
+    "found_summary": "谷中まつりと同日程・同地区で開催される菊の展示イベントで、2026年10月10日（土）・11日（日）に大円寺で菊市や菊人形の展示が行われる予定。",
+    "dedup_key": "e24df86148e661a0",
+    "first_seen": "2026-09-16",
+    "notified": true,
+    "image_url": "https://t-navi.city.taito.lg.jp/images/ogp.png"
   }
 }
