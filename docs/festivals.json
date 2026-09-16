@@ -427,7 +427,7 @@
     "found_summary": "インドネシアと日本の交流を目的とした2日間のフェスティバルで、飲食・物販あわせて多数のブースが並ぶ。",
     "dedup_key": "c4575032d698249d",
     "first_seen": "2026-08-24",
-    "notified": false
+    "notified": true
   },
   "2085d8be3f508271": {
     "event_name": "東京ナイトマーケット（秋開催）",
@@ -605,7 +605,7 @@
     "found_summary": "代々木公園で毎年開催されるインドネシア文化・グルメの祭典で、過去には80店舗規模のブースが出展した実績がある。",
     "dedup_key": "eeaba35ea7ddce0a",
     "first_seen": "2026-08-29",
-    "notified": false,
+    "notified": true,
     "image_url": "https://event.exantenna.net/wp3/wp-content/uploads/2024/07/2026-09-26-namaste-india-1.jpg"
   },
   "4ea16f744bccbcfc": {
@@ -755,6 +755,51 @@
     "found_summary": "<cite index=\"15-1\">今年も東京ビッグサイトにビアフェスが登場。全国各地のご当地クラフトビールとジビエをフードで楽しめるイベントで、「五酒飲帳」を使ったビールのスタンプラリーも実施される</cite>。",
     "dedup_key": "aac58b0f00a4f073",
     "first_seen": "2026-09-09",
+    "notified": true,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2025/08/tokyofesta.jpg"
+  },
+  "0b7e804a7ae26910": {
+    "event_name": "ベトナムフェスティバル in上野公園 2026",
+    "theme": "ベトナム(料理・文化・音楽)",
+    "venue": "上野恩賜公園 不忍池 弁天門前広場",
+    "area": "台東区",
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-20",
+    "scale_note": "ベトナムの飲食店ブースが多数出店予定。入場無料・雨天決行の国際交流フェスティバル。",
+    "url": "https://www.uenopark.info/2026/vietnam-festival-ueno-park-2026/",
+    "found_summary": "上野公園の弁天門前広場で2026年9月19日・20日に開催される、ベトナムの飲食店ブースや音楽・伝統文化を楽しめるフェスティバル。台東区・上野エリアでの開催のため優先度高。",
+    "dedup_key": "0b7e804a7ae26910",
+    "first_seen": "2026-09-16",
+    "notified": true,
+    "image_url": "https://www.uenopark.info/wp-content/uploads/2026/09/IMG_8750.jpeg"
+  },
+  "27947452da9e8ad8": {
+    "event_name": "オクトーバーフェスト 2026 in芝公園 ～Autumn～",
+    "theme": "ドイツ・ビール&グルメ",
+    "venue": "芝公園4号地",
+    "area": "港区",
+    "start_date": "2026-09-11",
+    "end_date": "2026-09-23",
+    "scale_note": "ドイツビールと料理をテーマにした屋外フードイベント。平日・土日祝で営業時間が異なる大型のビアガーデン形式フェス。",
+    "url": "https://tokyofesta.com/tag/food/",
+    "found_summary": "港区・芝公園にて2026年9月11日から23日まで開催されるドイツ風のビール&グルメイベントで、複数の飲食ブースが出店する。",
+    "dedup_key": "27947452da9e8ad8",
+    "first_seen": "2026-09-16",
+    "notified": true,
+    "image_url": "https://tokyofesta.com/wp-content/uploads/2025/08/tokyofesta.jpg"
+  },
+  "77437f58fb4daef8": {
+    "event_name": "フィエスタ・メヒカーナ",
+    "theme": "メキシコ・ラテンアメリカ料理",
+    "venue": "お台場デッキ ウエストプロムナード",
+    "area": "港区(お台場)",
+    "start_date": "2026-09-20",
+    "end_date": "2026-09-22",
+    "scale_note": "ラテンアメリカ文化交流協会共催の国際フードイベントで、メキシコ料理を中心とした飲食ブースが多数出店予定。",
+    "url": "https://tokyofesta.com/",
+    "found_summary": "お台場のデッキ ウエストプロムナードで2026年9月20日から22日まで開催される、メキシコ・ラテンアメリカ文化と料理をテーマにしたフェスティバル。",
+    "dedup_key": "77437f58fb4daef8",
+    "first_seen": "2026-09-16",
     "notified": true,
     "image_url": "https://tokyofesta.com/wp-content/uploads/2025/08/tokyofesta.jpg"
   }
