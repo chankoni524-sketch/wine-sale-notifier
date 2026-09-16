@@ -992,5 +992,67 @@
     "dedup_key": "f541f40dd387f922",
     "first_seen": "2026-09-09",
     "image_url": "https://event-checker.info/wp-content/uploads/2026/09/kurazushi2609_11.jpg"
+  },
+  "3d03cc437b893d11": {
+    "chain_name": "デニーズ",
+    "menu_name": "あめいろたまねぎソースのスープハンバーグ（秋のグランドメニュー改定）",
+    "category": "季節限定",
+    "price": "1,265円",
+    "start_date": "2026-09-16",
+    "end_date": "",
+    "url": "https://gourmet.watch.impress.co.jp/docs/news/2138942.html",
+    "found_summary": "デニーズは9月16日から「秋のグランドメニュー」を全国店舗で提供開始し、<cite index=\"13-1\">復活要望の多かった「あめいろたまねぎソースのスープハンバーグ」が再登場する</cite>。",
+    "dedup_key": "3d03cc437b893d11",
+    "first_seen": "2026-09-16",
+    "image_url": "https://gourmet.watch.impress.co.jp/img/grw/list/2138/942/top.jpg"
+  },
+  "34e4112186f247a5": {
+    "chain_name": "デニーズ",
+    "menu_name": "完全メシ トムヤムクンのスープごはん（日清食品コラボ）",
+    "category": "コラボ",
+    "price": "1,199円",
+    "start_date": "2026-09-16",
+    "end_date": "",
+    "url": "https://gourmet.watch.impress.co.jp/docs/news/2138942.html",
+    "found_summary": "秋のグランドメニュー改定にあわせ、<cite index=\"13-1\">日清食品とのコラボ「完全メシ」シリーズ第3弾「完全メシ トムヤムクンのスープごはん」が新登場する</cite>。",
+    "dedup_key": "34e4112186f247a5",
+    "first_seen": "2026-09-16",
+    "image_url": "https://gourmet.watch.impress.co.jp/img/grw/list/2138/942/top.jpg"
+  },
+  "3a7386170d495fc7": {
+    "chain_name": "デニーズ",
+    "menu_name": "秋の定番ぶどうスイーツ「シャインマスカット」「クイーンルージュ」",
+    "category": "季節限定",
+    "price": "",
+    "start_date": "2026-09-16",
+    "end_date": "",
+    "url": "https://www.7andi-fs.co.jp/7fs/pdf/250606.pdf",
+    "found_summary": "デニーズは<cite index=\"19-1\">秋の定番“ぶどうスイーツ”「シャインマスカット」「クイーンルージュ(R)」を9月16日（水）よりスタート</cite>する。",
+    "dedup_key": "3a7386170d495fc7",
+    "first_seen": "2026-09-16"
+  },
+  "1e415c508a905e6b": {
+    "chain_name": "オリーブの丘",
+    "menu_name": "イタリア産マスカルポーネと生ハムマンゴー（9月限定前菜）",
+    "category": "季節限定",
+    "price": "",
+    "start_date": "2026-09-01",
+    "end_date": "2026-09-30",
+    "url": "https://x.com/olivenooka_jp?lang=ja",
+    "found_summary": "オリーブの丘公式Xにて<cite index=\"21-1\">【9月限定】イタリア産マスカルポーネと生ハムマンゴー</cite>が毎年人気の前菜メニューとして紹介されている。",
+    "dedup_key": "1e415c508a905e6b",
+    "first_seen": "2026-09-16"
+  },
+  "02bea85db64ca7d6": {
+    "chain_name": "スシロー",
+    "menu_name": "シャインマスカットッペ",
+    "category": "季節限定",
+    "price": "",
+    "start_date": "2026-09-16",
+    "end_date": "",
+    "url": "https://bestcalendar.jp/events/%E3%82%B9%E3%82%B7%E3%83%AD%E3%83%BC",
+    "found_summary": "スシローの注目最新イベント情報として、<cite index=\"36-1\">「シャインマスカットッペ発売」が9月16日に予定されています</cite>。",
+    "dedup_key": "02bea85db64ca7d6",
+    "first_seen": "2026-09-16"
   }
 }
